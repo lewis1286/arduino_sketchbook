@@ -1,0 +1,42 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "/home/lewis/.arduino15/packages/arduino/hardware/samd/1.6.20/cores/arduino"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "/home/lewis/.arduino15/packages/arduino/hardware/samd/1.6.20/variants/arduino_zero"
+  },
+  {
+    "Sourcefile": "/home/lewis/Arduino/LSM303DLHC/build/sketch/LSM303DLHC.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "/home/lewis/.arduino15/packages/arduino/hardware/samd/1.6.20/libraries/Wire"
+  },
+  {
+    "Sourcefile": "/home/lewis/Arduino/LSM303DLHC/build/sketch/LSM303DLHC.ino.cpp",
+    "Include": "Adafruit_Sensor.h",
+    "Includepath": "/home/lewis/Arduino/libraries/Adafruit_Sensor"
+  },
+  {
+    "Sourcefile": "/home/lewis/Arduino/LSM303DLHC/build/sketch/LSM303DLHC.ino.cpp",
+    "Include": "Adafruit_LSM303_U.h",
+    "Includepath": "/home/lewis/Arduino/libraries/Adafruit_LSM303DLHC"
+  },
+  {
+    "Sourcefile": "/home/lewis/Arduino/LSM303DLHC/build/sketch/LSM303DLHC.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "/home/lewis/.arduino15/packages/arduino/hardware/samd/1.6.20/libraries/Wire/Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "/home/lewis/Arduino/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]
