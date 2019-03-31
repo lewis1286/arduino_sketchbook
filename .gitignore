@@ -1,2 +1,9 @@
 /libraries/*
 /.vscode/*
+*/build/*
+
+**/*.cpp
+**/*.bin
+**/*.hex
+**/*.map
+**/*.o

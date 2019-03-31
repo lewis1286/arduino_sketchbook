@@ -18,8 +18,8 @@
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 
 
-const int NS = 100; // Number of samples to take in for a fft batch (?global?)
-const int DL = 5000; // Duratoin of delay within loop
+const int NS = 10; // Number of samples to take in for a fft batch (?global?)
+const int DL = 50; // Duratoin of delay within loop
 
 void setup()
 {
@@ -39,14 +39,13 @@ void setup()
 
 }
 
-float get_vector_len(float leng, float accel_values[]){
+float get_vector_len(float vector[]){
+    float leng;
     leng = sqrt(
-            ((accel_values[0])*(accel_values[0])) +
-            ((accel_values[1])*(accel_values[1])) +
-            ((accel_values[2])*(accel_values[2]))
+            ((vector[0])*(vector[0])) +
+            ((vector[1])*(vector[1])) +
+            ((vector[2])*(vector[2]))
     );
-    SerialUSB.print("leng: ");
-    SerialUSB.println(leng);
     return leng;
 }
 
@@ -70,9 +69,10 @@ void read_imu(float accel_values[3]){
     accel_values[2] = event.acceleration.z;
 }
 
-void get_cos_sim(float sim, float i[3], float f[3], float len_i, float len_f){
+void get_cos_sim(float sim, float i[3], float f[3]){
     /* compute cosine similarity of two vectors */
-    // int x = 1;
+    float len_i = get_vector_len(i);
+    float len_f = get_vector_len(f);
     sim = (f[0] * i[0] + f[1] * i[1] + f[2] * i[2]) / (len_i * len_f);
 }
 
@@ -94,27 +94,30 @@ void loop()
     float sim;
     float old_direction[3];
     float new_direction[3];
-    float old_length = 0;
-    float new_length;
     float leng;
 
     for(int i=0; i<3; i++){old_direction[i] = 0.0;}
     for(int i=0; i<3; i++){new_direction[i] = 0.0;}
-    SerialUSB.print("new direction: :) ");
-    SerialUSB.println(new_direction[0]);
+
     for(int i=0; i<NS; i++){
         read_imu(accel_values);
-        SerialUSB.print("new length");
-        SerialUSB.println(leng);
         /* save length into array of lengths */
         /* lengths are not being used but for cossims, what to do w them? */
-        leng = get_vector_len(leng, accel_values);
+        leng = get_vector_len(accel_values);
 
-        SerialUSB.print("new direction");
-        SerialUSB.println(new_direction[0]);
-        get_direction(new_direction, accel_values, new_length);
-        SerialUSB.print("new direction: ");
-        SerialUSB.println(new_direction[0]);
+        /*SerialUSB.print("old direction: ");*/
+        /*SerialUSB.print(old_direction[0]);*/
+        /*SerialUSB.print(' ');*/
+        /*SerialUSB.print(old_direction[1]);*/
+        /*SerialUSB.print(' ');*/
+        /*SerialUSB.println(old_direction[2]);*/
+        get_direction(new_direction, accel_values, leng);
+        /*SerialUSB.print("new direction: ");*/
+        /*SerialUSB.print(new_direction[0]);*/
+        /*SerialUSB.print(' ');*/
+        /*SerialUSB.print(new_direction[1]);*/
+        /*SerialUSB.print(' ');*/
+        /*SerialUSB.println(new_direction[2]);*/
         /* compute cosine similarity between new direction and old */
         if(i==0){
             cossim[i] = 0;
@@ -124,18 +127,18 @@ void loop()
             get_cos_sim(
                 sim,
                 old_direction,
-                new_direction,
-                old_length,
-                new_length
+                new_direction
             );
             cossim[i] = sim;
         }
-        /*sleep by some variables*/
+        SerialUSB.print("coscim" );
+        SerialUSB.println(cossim[i]);
+        // copy save new_direction
         old_direction[0] = new_direction[0];
         old_direction[1] = new_direction[1];
         old_direction[2] = new_direction[2];
-        old_length = new_length;
 
+        /*sleep by some variables*/
         delay(DL);
     }
     shape_array(cossim, intcossim);
@@ -143,7 +146,6 @@ void loop()
         SerialUSB.print(cossim[i]);
     }
     SerialUSB.println(' ');
-
     for(int i=0; i<10; i++){
         SerialUSB.print(intcossim[i]);
     }

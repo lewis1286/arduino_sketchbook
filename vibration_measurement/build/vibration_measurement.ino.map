@@ -153,8 +153,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
  .data          0x0000000000000000        0x0 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
  .bss           0x0000000000000000        0x0 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .text._Z11get_cos_simfPfS_ff
-                0x0000000000000000        0x2 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .text._Z11get_cos_simfPfS_
+                0x0000000000000000       0x12 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
  .group         0x0000000000000000        0x8 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
  .group         0x0000000000000000        0x8 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
  .group         0x0000000000000000        0x8 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
@@ -686,7 +686,7 @@ END GROUP
 LOAD /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtend.o
 LOAD /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
 
-.text           0x0000000000002000     0xbd70
+.text           0x0000000000002000     0xbcb8
                 0x0000000000002000                __text_start__ = .
  *(.sketch_boot)
                 0x0000000000002000                . = ALIGN (0x2000)
@@ -713,694 +713,694 @@ LOAD /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
  .text._ZN29Adafruit_LSM303_Accel_UnifiedD0Ev
                 0x0000000000002144       0x14 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
                 0x0000000000002144                Adafruit_LSM303_Accel_Unified::~Adafruit_LSM303_Accel_Unified()
- .text._Z14get_vector_lenfPf
-                0x0000000000002158       0x6c /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x0000000000002158                get_vector_len(float, float*)
+ .text._Z14get_vector_lenPf
+                0x0000000000002158       0x40 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x0000000000002158                get_vector_len(float*)
  .text._Z13get_directionPfS_f
-                0x00000000000021c4       0x28 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x00000000000021c4                get_direction(float*, float*, float)
+                0x0000000000002198       0x28 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x0000000000002198                get_direction(float*, float*, float)
  .text._Z8read_imuPf
-                0x00000000000021ec       0x24 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x00000000000021ec                read_imu(float*)
+                0x00000000000021c0       0x24 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x00000000000021c0                read_imu(float*)
  .text._Z11shape_arrayPfPs
-                0x0000000000002210       0x24 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x0000000000002210                shape_array(float*, short*)
- .text.loop     0x0000000000002234      0x14c /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x0000000000002234                loop
+                0x00000000000021e4       0x24 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x00000000000021e4                shape_array(float*, short*)
+ .text.loop     0x0000000000002208       0xf8 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x0000000000002208                loop
  .text.startup._GLOBAL__sub_I_accel
-                0x0000000000002380       0x28 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .text.setup    0x00000000000023a8       0x48 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x00000000000023a8                setup
+                0x0000000000002300       0x28 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .text.setup    0x0000000000002328       0x48 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x0000000000002328                setup
  .text._ZN5Print17availableForWriteEv
-                0x00000000000023f0        0x4 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000023f0                Print::availableForWrite()
+                0x0000000000002370        0x4 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002370                Print::availableForWrite()
  .text._ZN7TwoWire5writeEPKhj
-                0x00000000000023f4       0x24 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000023f4                TwoWire::write(unsigned char const*, unsigned int)
+                0x0000000000002374       0x24 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002374                TwoWire::write(unsigned char const*, unsigned int)
  .text._ZN7TwoWire5flushEv
-                0x0000000000002418        0x2 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002418                TwoWire::flush()
+                0x0000000000002398        0x2 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002398                TwoWire::flush()
  .text._ZN7TwoWire4peekEv
-                0x000000000000241a       0x1a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x000000000000241a                TwoWire::peek()
+                0x000000000000239a       0x1a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x000000000000239a                TwoWire::peek()
  .text._ZN7TwoWire9availableEv
-                0x0000000000002434       0x12 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002434                TwoWire::available()
- *fill*         0x0000000000002446        0x2 
+                0x00000000000023b4       0x12 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x00000000000023b4                TwoWire::available()
+ *fill*         0x00000000000023c6        0x2 
  .text._ZN7TwoWireC2EP6SERCOMhh
-                0x0000000000002448       0x5c /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002448                TwoWire::TwoWire(SERCOM*, unsigned char, unsigned char)
-                0x0000000000002448                TwoWire::TwoWire(SERCOM*, unsigned char, unsigned char)
+                0x00000000000023c8       0x5c /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x00000000000023c8                TwoWire::TwoWire(SERCOM*, unsigned char, unsigned char)
+                0x00000000000023c8                TwoWire::TwoWire(SERCOM*, unsigned char, unsigned char)
  .text._ZN7TwoWire5beginEv
-                0x00000000000024a4       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000024a4                TwoWire::begin()
+                0x0000000000002424       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002424                TwoWire::begin()
  .text._ZN7TwoWire17beginTransmissionEh
-                0x00000000000024e4       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000024e4                TwoWire::beginTransmission(unsigned char)
+                0x0000000000002464       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002464                TwoWire::beginTransmission(unsigned char)
  .text._ZN11RingBufferNILi256EE10store_charEh
-                0x00000000000024fc       0x1a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000024fc                RingBufferN<256>::store_char(unsigned char)
+                0x000000000000247c       0x1a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x000000000000247c                RingBufferN<256>::store_char(unsigned char)
  .text._ZN7TwoWire11requestFromEhjb
-                0x0000000000002516       0x76 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002516                TwoWire::requestFrom(unsigned char, unsigned int, bool)
+                0x0000000000002496       0x76 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002496                TwoWire::requestFrom(unsigned char, unsigned int, bool)
  .text._ZN7TwoWire11requestFromEhj
-                0x000000000000258c        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x000000000000258c                TwoWire::requestFrom(unsigned char, unsigned int)
+                0x000000000000250c        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x000000000000250c                TwoWire::requestFrom(unsigned char, unsigned int)
  .text._ZN7TwoWire5writeEh
-                0x0000000000002596       0x2a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002596                TwoWire::write(unsigned char)
+                0x0000000000002516       0x2a /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002516                TwoWire::write(unsigned char)
  .text._ZN11RingBufferNILi256EE9read_charEv
-                0x00000000000025c0       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000025c0                RingBufferN<256>::read_char()
+                0x0000000000002540       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002540                RingBufferN<256>::read_char()
  .text._ZN7TwoWire15endTransmissionEb
-                0x00000000000025e0       0x72 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x00000000000025e0                TwoWire::endTransmission(bool)
+                0x0000000000002560       0x72 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002560                TwoWire::endTransmission(bool)
  .text._ZN7TwoWire15endTransmissionEv
-                0x0000000000002652        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002652                TwoWire::endTransmission()
+                0x00000000000025d2        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x00000000000025d2                TwoWire::endTransmission()
  .text._ZN7TwoWire4readEv
-                0x000000000000265c        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x000000000000265c                TwoWire::read()
+                0x00000000000025dc        0xa /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x00000000000025dc                TwoWire::read()
  .text._ZN7TwoWire9onServiceEv
-                0x0000000000002666      0x11c /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002666                TwoWire::onService()
- *fill*         0x0000000000002782        0x2 
+                0x00000000000025e6      0x11c /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x00000000000025e6                TwoWire::onService()
+ *fill*         0x0000000000002702        0x2 
  .text.SERCOM3_Handler
-                0x0000000000002784       0x10 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000002784                SERCOM3_Handler
+                0x0000000000002704       0x10 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002704                SERCOM3_Handler
  .text.startup._GLOBAL__sub_I__ZN7TwoWireC2EP6SERCOMhh
-                0x0000000000002794       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000002714       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
  .text._ZN29Adafruit_LSM303_Accel_Unified9getSensorEP8sensor_t
-                0x00000000000027ac       0x38 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x00000000000027ac                Adafruit_LSM303_Accel_Unified::getSensor(sensor_t*)
+                0x000000000000272c       0x38 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x000000000000272c                Adafruit_LSM303_Accel_Unified::getSensor(sensor_t*)
  .text._ZN7TwoWire5writeEi
-                0x00000000000027e4        0xc /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x00000000000027e4                TwoWire::write(int)
+                0x0000000000002764        0xc /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x0000000000002764                TwoWire::write(int)
  .text._ZN29Adafruit_LSM303_Accel_UnifiedC2El
-                0x00000000000027f0       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x00000000000027f0                Adafruit_LSM303_Accel_Unified::Adafruit_LSM303_Accel_Unified(long)
-                0x00000000000027f0                Adafruit_LSM303_Accel_Unified::Adafruit_LSM303_Accel_Unified(long)
+                0x0000000000002770       0x18 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x0000000000002770                Adafruit_LSM303_Accel_Unified::Adafruit_LSM303_Accel_Unified(long)
+                0x0000000000002770                Adafruit_LSM303_Accel_Unified::Adafruit_LSM303_Accel_Unified(long)
  .text._ZN29Adafruit_LSM303_Accel_Unified6write8Ehhh
-                0x0000000000002808       0x2c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x0000000000002808                Adafruit_LSM303_Accel_Unified::write8(unsigned char, unsigned char, unsigned char)
+                0x0000000000002788       0x2c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x0000000000002788                Adafruit_LSM303_Accel_Unified::write8(unsigned char, unsigned char, unsigned char)
  .text._ZN29Adafruit_LSM303_Accel_Unified5read8Ehh
-                0x0000000000002834       0x3c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x0000000000002834                Adafruit_LSM303_Accel_Unified::read8(unsigned char, unsigned char)
+                0x00000000000027b4       0x3c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x00000000000027b4                Adafruit_LSM303_Accel_Unified::read8(unsigned char, unsigned char)
  .text._ZN29Adafruit_LSM303_Accel_Unified5beginEv
-                0x0000000000002870       0x30 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x0000000000002870                Adafruit_LSM303_Accel_Unified::begin()
+                0x00000000000027f0       0x30 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x00000000000027f0                Adafruit_LSM303_Accel_Unified::begin()
  .text._ZN29Adafruit_LSM303_Accel_Unified4readEv
-                0x00000000000028a0       0x9c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x00000000000028a0                Adafruit_LSM303_Accel_Unified::read()
+                0x0000000000002820       0x9c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x0000000000002820                Adafruit_LSM303_Accel_Unified::read()
  .text._ZN29Adafruit_LSM303_Accel_Unified8getEventEP15sensors_event_t
-                0x000000000000293c       0x78 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x000000000000293c                Adafruit_LSM303_Accel_Unified::getEvent(sensors_event_t*)
+                0x00000000000028bc       0x78 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x00000000000028bc                Adafruit_LSM303_Accel_Unified::getEvent(sensors_event_t*)
  .text.applyWindow
-                0x00000000000029b4       0x28 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+                0x0000000000002934       0x28 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
  .text.arm_bitreversal_q15
-                0x00000000000029dc       0x70 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
-                0x00000000000029dc                arm_bitreversal_q15
+                0x000000000000295c       0x70 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+                0x000000000000295c                arm_bitreversal_q15
  .text.arm_radix2_butterfly_q15
-                0x0000000000002a4c      0x1dc /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
-                0x0000000000002a4c                arm_radix2_butterfly_q15
- .text.ZeroFFT  0x0000000000002c28      0x14c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
-                0x0000000000002c28                ZeroFFT
+                0x00000000000029cc      0x1dc /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+                0x00000000000029cc                arm_radix2_butterfly_q15
+ .text.ZeroFFT  0x0000000000002ba8      0x14c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+                0x0000000000002ba8                ZeroFFT
  .text.SERCOM0_Handler
-                0x0000000000002d74       0x10 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
-                0x0000000000002d74                SERCOM0_Handler
+                0x0000000000002cf4       0x10 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+                0x0000000000002cf4                SERCOM0_Handler
  .text.SERCOM5_Handler
-                0x0000000000002d84       0x10 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
-                0x0000000000002d84                SERCOM5_Handler
+                0x0000000000002d04       0x10 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+                0x0000000000002d04                SERCOM5_Handler
  .text.startup._GLOBAL__sub_I_g_APinDescription
-                0x0000000000002d94       0x94 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+                0x0000000000002d14       0x94 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
  .text._ZN5Print5writeEPKhj
-                0x0000000000002e28       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e28                Print::write(unsigned char const*, unsigned int)
+                0x0000000000002da8       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002da8                Print::write(unsigned char const*, unsigned int)
  .text._ZN5Print5writeEPKc
-                0x0000000000002e50       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e50                Print::write(char const*)
+                0x0000000000002dd0       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002dd0                Print::write(char const*)
  .text._ZN5Print5printEPKc
-                0x0000000000002e6c        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e6c                Print::print(char const*)
+                0x0000000000002dec        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002dec                Print::print(char const*)
  .text._ZN5Print5printEc
-                0x0000000000002e74        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e74                Print::print(char)
- *fill*         0x0000000000002e7e        0x2 
+                0x0000000000002df4        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002df4                Print::print(char)
+ *fill*         0x0000000000002dfe        0x2 
  .text._ZN5Print7printlnEv
-                0x0000000000002e80       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e80                Print::println()
+                0x0000000000002e00       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002e00                Print::println()
  .text._ZN5Print7printlnEPKc
-                0x0000000000002e90       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002e90                Print::println(char const*)
+                0x0000000000002e10       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002e10                Print::println(char const*)
  .text._ZN5Print7printlnEc
-                0x0000000000002ea4       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002ea4                Print::println(char)
+                0x0000000000002e24       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002e24                Print::println(char)
  .text._ZN5Print11printNumberEmh
-                0x0000000000002eb8       0x4e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002eb8                Print::printNumber(unsigned long, unsigned char)
+                0x0000000000002e38       0x4e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002e38                Print::printNumber(unsigned long, unsigned char)
  .text._ZN5Print5printEli
-                0x0000000000002f06       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002f06                Print::print(long, int)
+                0x0000000000002e86       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002e86                Print::print(long, int)
  .text._ZN5Print5printEii
-                0x0000000000002f42        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002f42                Print::print(int, int)
- *fill*         0x0000000000002f4a        0x6 
+                0x0000000000002ec2        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002ec2                Print::print(int, int)
+ *fill*         0x0000000000002eca        0x6 
  .text._ZN5Print10printFloatEdh
-                0x0000000000002f50      0x170 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x0000000000002f50                Print::printFloat(double, unsigned char)
+                0x0000000000002ed0      0x170 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000002ed0                Print::printFloat(double, unsigned char)
  .text._ZN5Print5printEdi
-                0x00000000000030c0        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x00000000000030c0                Print::print(double, int)
+                0x0000000000003040        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x0000000000003040                Print::print(double, int)
  .text._ZN5Print7printlnEdi
-                0x00000000000030ce       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
-                0x00000000000030ce                Print::println(double, int)
+                0x000000000000304e       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+                0x000000000000304e                Print::println(double, int)
  .text._ZN6SERCOMC2EP6Sercom
-                0x00000000000030ea        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000030ea                SERCOM::SERCOM(Sercom*)
-                0x00000000000030ea                SERCOM::SERCOM(Sercom*)
+                0x000000000000306a        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000306a                SERCOM::SERCOM(Sercom*)
+                0x000000000000306a                SERCOM::SERCOM(Sercom*)
  .text._ZN6SERCOM9initFrameE18SercomUartCharSize15SercomDataOrder16SercomParityMode19SercomNumberStopBit
-                0x00000000000030ee       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000030ee                SERCOM::initFrame(SercomUartCharSize, SercomDataOrder, SercomParityMode, SercomNumberStopBit)
+                0x000000000000306e       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000306e                SERCOM::initFrame(SercomUartCharSize, SercomDataOrder, SercomParityMode, SercomNumberStopBit)
  .text._ZN6SERCOM8initPadsE15SercomUartTXPad11SercomRXPad
-                0x0000000000003126       0x26 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003126                SERCOM::initPads(SercomUartTXPad, SercomRXPad)
+                0x00000000000030a6       0x26 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000030a6                SERCOM::initPads(SercomUartTXPad, SercomRXPad)
  .text._ZN6SERCOM9resetUARTEv
-                0x000000000000314c       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000314c                SERCOM::resetUART()
+                0x00000000000030cc       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000030cc                SERCOM::resetUART()
  .text._ZN6SERCOM10enableUARTEv
-                0x0000000000003168       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003168                SERCOM::enableUART()
+                0x00000000000030e8       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000030e8                SERCOM::enableUART()
  .text._ZN6SERCOM9flushUARTEv
-                0x000000000000317c       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000317c                SERCOM::flushUART()
+                0x00000000000030fc       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000030fc                SERCOM::flushUART()
  .text._ZN6SERCOM15clearStatusUARTEv
-                0x000000000000318c        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000318c                SERCOM::clearStatusUART()
+                0x000000000000310c        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000310c                SERCOM::clearStatusUART()
  .text._ZN6SERCOM17availableDataUARTEv
-                0x0000000000003194        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003194                SERCOM::availableDataUART()
+                0x0000000000003114        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003114                SERCOM::availableDataUART()
  .text._ZN6SERCOM11isUARTErrorEv
-                0x000000000000319e        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000319e                SERCOM::isUARTError()
+                0x000000000000311e        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000311e                SERCOM::isUARTError()
  .text._ZN6SERCOM20acknowledgeUARTErrorEv
-                0x00000000000031a6        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031a6                SERCOM::acknowledgeUARTError()
+                0x0000000000003126        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003126                SERCOM::acknowledgeUARTError()
  .text._ZN6SERCOM16isFrameErrorUARTEv
-                0x00000000000031b4        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031b4                SERCOM::isFrameErrorUART()
+                0x0000000000003134        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003134                SERCOM::isFrameErrorUART()
  .text._ZN6SERCOM19clearFrameErrorUARTEv
-                0x00000000000031be        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031be                SERCOM::clearFrameErrorUART()
+                0x000000000000313e        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000313e                SERCOM::clearFrameErrorUART()
  .text._ZN6SERCOM23isDataRegisterEmptyUARTEv
-                0x00000000000031ca        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031ca                SERCOM::isDataRegisterEmptyUART()
+                0x000000000000314a        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000314a                SERCOM::isDataRegisterEmptyUART()
  .text._ZN6SERCOM12readDataUARTEv
-                0x00000000000031d4        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031d4                SERCOM::readDataUART()
+                0x0000000000003154        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003154                SERCOM::readDataUART()
  .text._ZN6SERCOM13writeDataUARTEh
-                0x00000000000031dc        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031dc                SERCOM::writeDataUART(unsigned char)
+                0x000000000000315c        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000315c                SERCOM::writeDataUART(unsigned char)
  .text._ZN6SERCOM36enableDataRegisterEmptyInterruptUARTEv
-                0x00000000000031ea        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031ea                SERCOM::enableDataRegisterEmptyInterruptUART()
+                0x000000000000316a        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000316a                SERCOM::enableDataRegisterEmptyInterruptUART()
  .text._ZN6SERCOM37disableDataRegisterEmptyInterruptUARTEv
-                0x00000000000031f2        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031f2                SERCOM::disableDataRegisterEmptyInterruptUART()
+                0x0000000000003172        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003172                SERCOM::disableDataRegisterEmptyInterruptUART()
  .text._ZN6SERCOM9resetWIREEv
-                0x00000000000031fa       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000031fa                SERCOM::resetWIRE()
+                0x000000000000317a       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000317a                SERCOM::resetWIRE()
  .text._ZN6SERCOM10enableWIREEv
-                0x0000000000003216       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003216                SERCOM::enableWIRE()
+                0x0000000000003196       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003196                SERCOM::enableWIRE()
  .text._ZN6SERCOM18prepareNackBitWIREEv
-                0x000000000000323e       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000323e                SERCOM::prepareNackBitWIRE()
- *fill*         0x000000000000324e        0x2 
+                0x00000000000031be       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000031be                SERCOM::prepareNackBitWIRE()
+ *fill*         0x00000000000031ce        0x2 
  .text._ZN6SERCOM17prepareAckBitWIREEv
-                0x0000000000003250       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003250                SERCOM::prepareAckBitWIRE()
+                0x00000000000031d0       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000031d0                SERCOM::prepareAckBitWIRE()
  .text._ZN6SERCOM22prepareCommandBitsWireEh
-                0x0000000000003264       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003264                SERCOM::prepareCommandBitsWire(unsigned char)
+                0x00000000000031e4       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000031e4                SERCOM::prepareCommandBitsWire(unsigned char)
  .text._ZN6SERCOM21startTransmissionWIREEh23SercomWireReadWriteFlag
-                0x0000000000003290       0x5e /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003290                SERCOM::startTransmissionWIRE(unsigned char, SercomWireReadWriteFlag)
+                0x0000000000003210       0x5e /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003210                SERCOM::startTransmissionWIRE(unsigned char, SercomWireReadWriteFlag)
  .text._ZN6SERCOM18sendDataMasterWIREEh
-                0x00000000000032ee       0x22 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000032ee                SERCOM::sendDataMasterWIRE(unsigned char)
+                0x000000000000326e       0x22 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x000000000000326e                SERCOM::sendDataMasterWIRE(unsigned char)
  .text._ZN6SERCOM17sendDataSlaveWIREEh
-                0x0000000000003310       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003310                SERCOM::sendDataSlaveWIRE(unsigned char)
+                0x0000000000003290       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003290                SERCOM::sendDataSlaveWIRE(unsigned char)
  .text._ZN6SERCOM11isSlaveWIREEv
-                0x000000000000332a       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000332a                SERCOM::isSlaveWIRE()
+                0x00000000000032aa       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032aa                SERCOM::isSlaveWIRE()
  .text._ZN6SERCOM15isDataReadyWIREEv
-                0x000000000000333c        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000333c                SERCOM::isDataReadyWIRE()
+                0x00000000000032bc        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032bc                SERCOM::isDataReadyWIRE()
  .text._ZN6SERCOM18isStopDetectedWIREEv
-                0x0000000000003346        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003346                SERCOM::isStopDetectedWIRE()
+                0x00000000000032c6        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032c6                SERCOM::isStopDetectedWIRE()
  .text._ZN6SERCOM21isRestartDetectedWIREEv
-                0x0000000000003350        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003350                SERCOM::isRestartDetectedWIRE()
+                0x00000000000032d0        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032d0                SERCOM::isRestartDetectedWIRE()
  .text._ZN6SERCOM14isAddressMatchEv
-                0x000000000000335a        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000335a                SERCOM::isAddressMatch()
+                0x00000000000032da        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032da                SERCOM::isAddressMatch()
  .text._ZN6SERCOM25isMasterReadOperationWIREEv
-                0x0000000000003364        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003364                SERCOM::isMasterReadOperationWIRE()
+                0x00000000000032e4        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032e4                SERCOM::isMasterReadOperationWIRE()
  .text._ZN6SERCOM12readDataWIREEv
-                0x000000000000336e       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x000000000000336e                SERCOM::readDataWIRE()
+                0x00000000000032ee       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000032ee                SERCOM::readDataWIRE()
  .text._ZN6SERCOM13initClockNVICEv
-                0x0000000000003388       0xac /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003388                SERCOM::initClockNVIC()
+                0x0000000000003308       0xac /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003308                SERCOM::initClockNVIC()
  .text._ZN6SERCOM8initUARTE14SercomUartMode20SercomUartSampleRatem
-                0x0000000000003434       0x6c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x0000000000003434                SERCOM::initUART(SercomUartMode, SercomUartSampleRate, unsigned long)
+                0x00000000000033b4       0x6c /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x00000000000033b4                SERCOM::initUART(SercomUartMode, SercomUartSampleRate, unsigned long)
  .text._ZN6SERCOM14initMasterWIREEm
-                0x00000000000034a0       0x54 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
-                0x00000000000034a0                SERCOM::initMasterWIRE(unsigned long)
+                0x0000000000003420       0x54 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+                0x0000000000003420                SERCOM::initMasterWIRE(unsigned long)
  .text._ZN7Serial_17availableForWriteEv
-                0x00000000000034f4        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x00000000000034f4                Serial_::availableForWrite()
+                0x0000000000003474        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x0000000000003474                Serial_::availableForWrite()
  .text._ZN7Serial_5writeEh
-                0x00000000000034f8       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x00000000000034f8                Serial_::write(unsigned char)
+                0x0000000000003478       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x0000000000003478                Serial_::write(unsigned char)
  .text._ZN7Serial_9availableEv
-                0x000000000000350c        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x000000000000350c                Serial_::available()
+                0x000000000000348c        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x000000000000348c                Serial_::available()
  .text._ZN7Serial_5flushEv
-                0x0000000000003518        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x0000000000003518                Serial_::flush()
+                0x0000000000003498        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x0000000000003498                Serial_::flush()
  .text._ZN7Serial_5writeEPKhj
-                0x0000000000003524       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x0000000000003524                Serial_::write(unsigned char const*, unsigned int)
+                0x00000000000034a4       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x00000000000034a4                Serial_::write(unsigned char const*, unsigned int)
  .text._ZN7Serial_4peekEv
-                0x0000000000003540       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x0000000000003540                Serial_::peek()
+                0x00000000000034c0       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x00000000000034c0                Serial_::peek()
  .text._ZN7Serial_4readEv
-                0x000000000000355c       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x000000000000355c                Serial_::read()
+                0x00000000000034dc       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x00000000000034dc                Serial_::read()
  .text._Z16CDC_GetInterfacePh
-                0x0000000000003580       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x0000000000003580                CDC_GetInterface(unsigned char*)
+                0x0000000000003500       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x0000000000003500                CDC_GetInterface(unsigned char*)
  .text._Z9CDC_SetupR8USBSetup
-                0x000000000000359c       0x80 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x000000000000359c                CDC_Setup(USBSetup&)
+                0x000000000000351c       0x80 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x000000000000351c                CDC_Setup(USBSetup&)
  .text.startup._GLOBAL__sub_I__Z17_CDC_GetInterfacev
-                0x000000000000361c       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x000000000000359c       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
  .text._ZL5utox8mPc
-                0x0000000000003644       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000035c4       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .text._ZN26DoubleBufferedEPOutHandlerD2Ev
-                0x0000000000003660       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003660                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
-                0x0000000000003660                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
+                0x00000000000035e0       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000035e0                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
+                0x00000000000035e0                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
  .text._ZN26DoubleBufferedEPOutHandlerD0Ev
-                0x000000000000367c       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x000000000000367c                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
- *fill*         0x000000000000368e        0x2 
+                0x00000000000035fc       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000035fc                DoubleBufferedEPOutHandler::~DoubleBufferedEPOutHandler()
+ *fill*         0x000000000000360e        0x2 
  .text._ZN14USBDeviceClass6initEPEmm.part.4
-                0x0000000000003690       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003610       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .text._ZN20USBDevice_SAMD21G18x5resetEv
-                0x0000000000003758       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003758                USBDevice_SAMD21G18x::reset()
+                0x00000000000036d8       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000036d8                USBDevice_SAMD21G18x::reset()
  .text._ZN20USBDevice_SAMD21G18x9calibrateEv
-                0x0000000000003780       0x5c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003780                USBDevice_SAMD21G18x::calibrate()
+                0x0000000000003700       0x5c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003700                USBDevice_SAMD21G18x::calibrate()
  .text._ZN7__GuardC2Ev
-                0x00000000000037dc        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000037dc                __Guard::__Guard()
-                0x00000000000037dc                __Guard::__Guard()
+                0x000000000000375c        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000375c                __Guard::__Guard()
+                0x000000000000375c                __Guard::__Guard()
  .text._ZN7__GuardD2Ev
-                0x00000000000037ea        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000037ea                __Guard::~__Guard()
-                0x00000000000037ea                __Guard::~__Guard()
+                0x000000000000376a        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000376a                __Guard::~__Guard()
+                0x000000000000376a                __Guard::~__Guard()
  .text._ZNK26DoubleBufferedEPOutHandler9availableEv
-                0x00000000000037f8       0x5e /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000037f8                DoubleBufferedEPOutHandler::available() const
- *fill*         0x0000000000003856        0x2 
+                0x0000000000003778       0x5e /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003778                DoubleBufferedEPOutHandler::available() const
+ *fill*         0x00000000000037d6        0x2 
  .text._ZN26DoubleBufferedEPOutHandler7releaseEv
-                0x0000000000003858       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003858                DoubleBufferedEPOutHandler::release()
+                0x00000000000037d8       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000037d8                DoubleBufferedEPOutHandler::release()
  .text._ZN26DoubleBufferedEPOutHandler4recvEPvm
-                0x00000000000038b0      0x11c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000038b0                DoubleBufferedEPOutHandler::recv(void*, unsigned long)
+                0x0000000000003830      0x11c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003830                DoubleBufferedEPOutHandler::recv(void*, unsigned long)
  .text._ZN26DoubleBufferedEPOutHandler14handleEndpointEv
-                0x00000000000039cc       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000039cc                DoubleBufferedEPOutHandler::handleEndpoint()
+                0x000000000000394c       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000394c                DoubleBufferedEPOutHandler::handleEndpoint()
  .text._ZN14USBDeviceClass14SendInterfacesEPm
-                0x0000000000003a94       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003a94                USBDeviceClass::SendInterfaces(unsigned long*)
+                0x0000000000003a14       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003a14                USBDeviceClass::SendInterfaces(unsigned long*)
  .text._ZN14USBDeviceClass14handleEndpointEh
-                0x0000000000003ac0       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003ac0                USBDeviceClass::handleEndpoint(unsigned char)
+                0x0000000000003a40       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003a40                USBDeviceClass::handleEndpoint(unsigned char)
  .text._ZN14USBDeviceClass4initEv
-                0x0000000000003b00       0xf0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003b00                USBDeviceClass::init()
+                0x0000000000003a80       0xf0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003a80                USBDeviceClass::init()
  .text._ZN14USBDeviceClass6attachEv
-                0x0000000000003bf0       0x34 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003bf0                USBDeviceClass::attach()
+                0x0000000000003b70       0x34 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003b70                USBDeviceClass::attach()
  .text._ZN14USBDeviceClass10setAddressEm
-                0x0000000000003c24       0x48 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003c24                USBDeviceClass::setAddress(unsigned long)
+                0x0000000000003ba4       0x48 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003ba4                USBDeviceClass::setAddress(unsigned long)
  .text._ZN14USBDeviceClass25handleClassInterfaceSetupER8USBSetup
-                0x0000000000003c6c       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003c6c                USBDeviceClass::handleClassInterfaceSetup(USBSetup&)
+                0x0000000000003bec       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003bec                USBDeviceClass::handleClassInterfaceSetup(USBSetup&)
  .text._ZN14USBDeviceClass6initEPEmm
-                0x0000000000003cac       0xf8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003cac                USBDeviceClass::initEP(unsigned long, unsigned long)
+                0x0000000000003c2c       0xf8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003c2c                USBDeviceClass::initEP(unsigned long, unsigned long)
  .text._ZN14USBDeviceClass13initEndpointsEv
-                0x0000000000003da4       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003da4                USBDeviceClass::initEndpoints()
+                0x0000000000003d24       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003d24                USBDeviceClass::initEndpoints()
  .text._ZN14USBDeviceClass9availableEm
-                0x0000000000003dc8       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003dc8                USBDeviceClass::available(unsigned long)
+                0x0000000000003d48       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003d48                USBDeviceClass::available(unsigned long)
  .text._ZN14USBDeviceClass5flushEm
-                0x0000000000003df4       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003df4                USBDeviceClass::flush(unsigned long)
+                0x0000000000003d74       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003d74                USBDeviceClass::flush(unsigned long)
  .text._ZN14USBDeviceClass14armRecvCtrlOUTEm
-                0x0000000000003e20       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003e20                USBDeviceClass::armRecvCtrlOUT(unsigned long)
+                0x0000000000003da0       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003da0                USBDeviceClass::armRecvCtrlOUT(unsigned long)
  .text._ZN14USBDeviceClass11recvControlEPvm
-                0x0000000000003e80       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003e80                USBDeviceClass::recvControl(void*, unsigned long)
+                0x0000000000003e00       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003e00                USBDeviceClass::recvControl(void*, unsigned long)
  .text._ZN14USBDeviceClass7armRecvEm
-                0x0000000000003ebc       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003ebc                USBDeviceClass::armRecv(unsigned long)
+                0x0000000000003e3c       0x3c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003e3c                USBDeviceClass::armRecv(unsigned long)
  .text._ZN14USBDeviceClass4recvEmPvm
-                0x0000000000003ef8       0xd8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003ef8                USBDeviceClass::recv(unsigned long, void*, unsigned long)
+                0x0000000000003e78       0xd8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003e78                USBDeviceClass::recv(unsigned long, void*, unsigned long)
  .text._ZN14USBDeviceClass4recvEm
-                0x0000000000003fd0       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003fd0                USBDeviceClass::recv(unsigned long)
+                0x0000000000003f50       0x1c /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003f50                USBDeviceClass::recv(unsigned long)
  .text._ZN14USBDeviceClass4sendEmPKvm
-                0x0000000000003fec      0x124 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000003fec                USBDeviceClass::send(unsigned long, void const*, unsigned long)
+                0x0000000000003f6c      0x124 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000003f6c                USBDeviceClass::send(unsigned long, void const*, unsigned long)
  .text._ZN14USBDeviceClass7armSendEmPKvm
-                0x0000000000004110       0x48 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000004110                USBDeviceClass::armSend(unsigned long, void const*, unsigned long)
+                0x0000000000004090       0x48 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000004090                USBDeviceClass::armSend(unsigned long, void const*, unsigned long)
  .text._ZN14USBDeviceClass11sendControlEPKvm
-                0x0000000000004158       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000004158                USBDeviceClass::sendControl(void const*, unsigned long)
+                0x00000000000040d8       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000040d8                USBDeviceClass::sendControl(void const*, unsigned long)
  .text._ZN14USBDeviceClass20sendStringDescriptorEPKhh
-                0x00000000000041b0       0x68 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000041b0                USBDeviceClass::sendStringDescriptor(unsigned char const*, unsigned char)
+                0x0000000000004130       0x68 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000004130                USBDeviceClass::sendStringDescriptor(unsigned char const*, unsigned char)
  .text._ZN14USBDeviceClass12packMessagesEb.part.6
-                0x0000000000004218       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000004198       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .text._ZN14USBDeviceClass17sendConfigurationEm
-                0x0000000000004238       0x90 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x0000000000004238                USBDeviceClass::sendConfiguration(unsigned long)
+                0x00000000000041b8       0x90 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000041b8                USBDeviceClass::sendConfiguration(unsigned long)
  .text._ZN14USBDeviceClass14sendDescriptorER8USBSetup
-                0x00000000000042c8       0xec /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000042c8                USBDeviceClass::sendDescriptor(USBSetup&)
+                0x0000000000004248       0xec /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000004248                USBDeviceClass::sendDescriptor(USBSetup&)
  .text._ZN14USBDeviceClass19handleStandardSetupER8USBSetup
-                0x00000000000043b4      0x118 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000043b4                USBDeviceClass::handleStandardSetup(USBSetup&)
+                0x0000000000004334      0x118 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x0000000000004334                USBDeviceClass::handleStandardSetup(USBSetup&)
  .text._ZN14USBDeviceClass10ISRHandlerEv
-                0x00000000000044cc      0x150 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x00000000000044cc                USBDeviceClass::ISRHandler()
+                0x000000000000444c      0x150 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000444c                USBDeviceClass::ISRHandler()
  .text.UDD_Handler
-                0x000000000000461c       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x000000000000461c                UDD_Handler
+                0x000000000000459c       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000459c                UDD_Handler
  .text.startup._GLOBAL__sub_I__ZN20USBDevice_SAMD21G18x5resetEv
-                0x000000000000462c       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x00000000000045ac       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .text._ZN4UartcvbEv
-                0x000000000000463c        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x000000000000463c                Uart::operator bool()
+                0x00000000000045bc        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000045bc                Uart::operator bool()
  .text._ZN4Uart5beginEm
-                0x0000000000004640       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004640                Uart::begin(unsigned long)
+                0x00000000000045c0       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000045c0                Uart::begin(unsigned long)
  .text._ZN4Uart4peekEv
-                0x0000000000004650       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004650                Uart::peek()
+                0x00000000000045d0       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000045d0                Uart::peek()
  .text._ZN4Uart3endEv
-                0x000000000000466a       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x000000000000466a                Uart::end()
- *fill*         0x000000000000468a        0x2 
+                0x00000000000045ea       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000045ea                Uart::end()
+ *fill*         0x000000000000460a        0x2 
  .text._ZN4UartC2EP6SERCOMhh11SercomRXPad15SercomUartTXPadhh
-                0x000000000000468c       0xa4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x000000000000468c                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad, unsigned char, unsigned char)
-                0x000000000000468c                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad, unsigned char, unsigned char)
+                0x000000000000460c       0xa4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x000000000000460c                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad, unsigned char, unsigned char)
+                0x000000000000460c                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad, unsigned char, unsigned char)
  .text._ZN4UartC2EP6SERCOMhh11SercomRXPad15SercomUartTXPad
-                0x0000000000004730       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004730                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad)
-                0x0000000000004730                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad)
+                0x00000000000046b0       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000046b0                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad)
+                0x00000000000046b0                Uart::Uart(SERCOM*, unsigned char, unsigned char, SercomRXPad, SercomUartTXPad)
  .text._ZN4Uart16extractNbStopBitEt
-                0x0000000000004754        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004754                Uart::extractNbStopBit(unsigned short)
+                0x00000000000046d4        0xe /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000046d4                Uart::extractNbStopBit(unsigned short)
  .text._ZN4Uart15extractCharSizeEt
-                0x0000000000004762       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004762                Uart::extractCharSize(unsigned short)
+                0x00000000000046e2       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000046e2                Uart::extractCharSize(unsigned short)
  .text._ZN4Uart13extractParityEt
-                0x000000000000478e       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x000000000000478e                Uart::extractParity(unsigned short)
- *fill*         0x00000000000047a6        0x2 
+                0x000000000000470e       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x000000000000470e                Uart::extractParity(unsigned short)
+ *fill*         0x0000000000004726        0x2 
  .text._ZN4Uart5beginEmt
-                0x00000000000047a8       0xf8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000047a8                Uart::begin(unsigned long, unsigned short)
+                0x0000000000004728       0xf8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004728                Uart::begin(unsigned long, unsigned short)
  .text._ZN11RingBufferNILi256EE9availableEv
-                0x00000000000048a0       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000048a0                RingBufferN<256>::available()
+                0x0000000000004820       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004820                RingBufferN<256>::available()
  .text._ZN4Uart5flushEv
-                0x00000000000048b2       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000048b2                Uart::flush()
+                0x0000000000004832       0x1a /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004832                Uart::flush()
  .text._ZN4Uart9availableEv
-                0x00000000000048cc        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000048cc                Uart::available()
+                0x000000000000484c        0xa /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x000000000000484c                Uart::available()
  .text._ZN11RingBufferNILi256EE17availableForStoreEv
-                0x00000000000048d6       0x1e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000048d6                RingBufferN<256>::availableForStore()
+                0x0000000000004856       0x1e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004856                RingBufferN<256>::availableForStore()
  .text._ZN4Uart17availableForWriteEv
-                0x00000000000048f4        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000048f4                Uart::availableForWrite()
+                0x0000000000004874        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004874                Uart::availableForWrite()
  .text._ZN4Uart10IrqHandlerEv
-                0x0000000000004900       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004900                Uart::IrqHandler()
+                0x0000000000004880       0xc8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004880                Uart::IrqHandler()
  .text._ZN4Uart5writeEh
-                0x00000000000049c8       0xb4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x00000000000049c8                Uart::write(unsigned char)
+                0x0000000000004948       0xb4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x0000000000004948                Uart::write(unsigned char)
  .text._ZN4Uart4readEv
-                0x0000000000004a7c       0x4c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x0000000000004a7c                Uart::read()
+                0x00000000000049fc       0x4c /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x00000000000049fc                Uart::read()
  .text.__cxa_pure_virtual
-                0x0000000000004ac8        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
-                0x0000000000004ac8                __cxa_pure_virtual
+                0x0000000000004a48        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+                0x0000000000004a48                __cxa_pure_virtual
  .text.Dummy_Handler
-                0x0000000000004aca        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
-                0x0000000000004aca                DMAC_Handler
-                0x0000000000004aca                HardFault_Handler
-                0x0000000000004aca                AC_Handler
-                0x0000000000004aca                PendSV_Handler
-                0x0000000000004aca                NMI_Handler
-                0x0000000000004aca                TC7_Handler
-                0x0000000000004aca                SERCOM1_Handler
-                0x0000000000004aca                ADC_Handler
-                0x0000000000004aca                TCC1_Handler
-                0x0000000000004aca                SERCOM2_Handler
-                0x0000000000004aca                TCC0_Handler
-                0x0000000000004aca                RTC_Handler
-                0x0000000000004aca                EIC_Handler
-                0x0000000000004aca                TC6_Handler
-                0x0000000000004aca                WDT_Handler
-                0x0000000000004aca                TC4_Handler
-                0x0000000000004aca                TC3_Handler
-                0x0000000000004aca                Dummy_Handler
-                0x0000000000004aca                PM_Handler
-                0x0000000000004aca                SVC_Handler
-                0x0000000000004aca                TCC2_Handler
-                0x0000000000004aca                EVSYS_Handler
-                0x0000000000004aca                SERCOM4_Handler
-                0x0000000000004aca                I2S_Handler
-                0x0000000000004aca                NVMCTRL_Handler
-                0x0000000000004aca                DAC_Handler
-                0x0000000000004aca                PTC_Handler
-                0x0000000000004aca                SYSCTRL_Handler
+                0x0000000000004a4a        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+                0x0000000000004a4a                DMAC_Handler
+                0x0000000000004a4a                HardFault_Handler
+                0x0000000000004a4a                AC_Handler
+                0x0000000000004a4a                PendSV_Handler
+                0x0000000000004a4a                NMI_Handler
+                0x0000000000004a4a                TC7_Handler
+                0x0000000000004a4a                SERCOM1_Handler
+                0x0000000000004a4a                ADC_Handler
+                0x0000000000004a4a                TCC1_Handler
+                0x0000000000004a4a                SERCOM2_Handler
+                0x0000000000004a4a                TCC0_Handler
+                0x0000000000004a4a                RTC_Handler
+                0x0000000000004a4a                EIC_Handler
+                0x0000000000004a4a                TC6_Handler
+                0x0000000000004a4a                WDT_Handler
+                0x0000000000004a4a                TC4_Handler
+                0x0000000000004a4a                TC3_Handler
+                0x0000000000004a4a                Dummy_Handler
+                0x0000000000004a4a                PM_Handler
+                0x0000000000004a4a                SVC_Handler
+                0x0000000000004a4a                TCC2_Handler
+                0x0000000000004a4a                EVSYS_Handler
+                0x0000000000004a4a                SERCOM4_Handler
+                0x0000000000004a4a                I2S_Handler
+                0x0000000000004a4a                NVMCTRL_Handler
+                0x0000000000004a4a                DAC_Handler
+                0x0000000000004a4a                PTC_Handler
+                0x0000000000004a4a                SYSCTRL_Handler
  .text.USB_Handler
-                0x0000000000004acc       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
-                0x0000000000004acc                USB_Handler
+                0x0000000000004a4c       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+                0x0000000000004a4c                USB_Handler
  .text.Reset_Handler
-                0x0000000000004ae0       0x54 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
-                0x0000000000004ae0                Reset_Handler
+                0x0000000000004a60       0x54 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+                0x0000000000004a60                Reset_Handler
  .text.SysTick_Handler
-                0x0000000000004b34       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
-                0x0000000000004b34                SysTick_Handler
+                0x0000000000004ab4       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+                0x0000000000004ab4                SysTick_Handler
  .text.USB_SetHandler
-                0x0000000000004b44        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
-                0x0000000000004b44                USB_SetHandler
- .text.millis   0x0000000000004b50        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
-                0x0000000000004b50                millis
- .text.delay    0x0000000000004b5c       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
-                0x0000000000004b5c                delay
+                0x0000000000004ac4        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+                0x0000000000004ac4                USB_SetHandler
+ .text.millis   0x0000000000004ad0        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+                0x0000000000004ad0                millis
+ .text.delay    0x0000000000004adc       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+                0x0000000000004adc                delay
  .text.SysTick_DefaultHandler
-                0x0000000000004b7c       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
-                0x0000000000004b7c                SysTick_DefaultHandler
- .text.__empty  0x0000000000004b90        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
-                0x0000000000004b90                yield
- .text.__false  0x0000000000004b92        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
-                0x0000000000004b92                sysTickHook
+                0x0000000000004afc       0x14 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+                0x0000000000004afc                SysTick_DefaultHandler
+ .text.__empty  0x0000000000004b10        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+                0x0000000000004b10                yield
+ .text.__false  0x0000000000004b12        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+                0x0000000000004b12                sysTickHook
  .text._Z11initVariantv
-                0x0000000000004b96        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
-                0x0000000000004b96                initVariant()
+                0x0000000000004b16        0x2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+                0x0000000000004b16                initVariant()
  .text.startup.main
-                0x0000000000004b98       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
-                0x0000000000004b98                main
- .text._Znwj    0x0000000000004bd8        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
-                0x0000000000004bd8                operator new(unsigned int)
- .text._ZdlPv   0x0000000000004be0        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
-                0x0000000000004be0                operator delete(void*)
+                0x0000000000004b18       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+                0x0000000000004b18                main
+ .text._Znwj    0x0000000000004b58        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+                0x0000000000004b58                operator new(unsigned int)
+ .text._ZdlPv   0x0000000000004b60        0x8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+                0x0000000000004b60                operator delete(void*)
  .text.SystemInit
-                0x0000000000004be8      0x168 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
-                0x0000000000004be8                SystemInit
- .text.init     0x0000000000004d50       0xf0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
-                0x0000000000004d50                init
+                0x0000000000004b68      0x168 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+                0x0000000000004b68                SystemInit
+ .text.init     0x0000000000004cd0       0xf0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+                0x0000000000004cd0                init
  .text.analogReference
-                0x0000000000004e40       0x5c /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
-                0x0000000000004e40                analogReference
- .text.pinMode  0x0000000000004e9c       0xb4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
-                0x0000000000004e9c                pinMode
+                0x0000000000004dc0       0x5c /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+                0x0000000000004dc0                analogReference
+ .text.pinMode  0x0000000000004e1c       0xb4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+                0x0000000000004e1c                pinMode
  .text.digitalWrite
-                0x0000000000004f50       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
-                0x0000000000004f50                digitalWrite
+                0x0000000000004ed0       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+                0x0000000000004ed0                digitalWrite
  .text.pinPeripheral
-                0x0000000000004fb0       0xc4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
-                0x0000000000004fb0                pinPeripheral
+                0x0000000000004f30       0xc4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+                0x0000000000004f30                pinPeripheral
  .text.initiateReset
-                0x0000000000005074        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
-                0x0000000000005074                initiateReset
+                0x0000000000004ff4        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+                0x0000000000004ff4                initiateReset
  .text.cancelReset
-                0x0000000000005080       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
-                0x0000000000005080                cancelReset
+                0x0000000000005000       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+                0x0000000000005000                cancelReset
  .text.tickReset
-                0x0000000000005090       0x74 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
-                0x0000000000005090                tickReset
+                0x0000000000005010       0x74 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+                0x0000000000005010                tickReset
  .text._ZN13PluggableUSB_12getInterfaceEPh
-                0x0000000000005104       0x2a /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
-                0x0000000000005104                PluggableUSB_::getInterface(unsigned char*)
+                0x0000000000005084       0x2a /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+                0x0000000000005084                PluggableUSB_::getInterface(unsigned char*)
  .text._ZN13PluggableUSB_13getDescriptorER8USBSetup
-                0x000000000000512e       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
-                0x000000000000512e                PluggableUSB_::getDescriptor(USBSetup&)
+                0x00000000000050ae       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+                0x00000000000050ae                PluggableUSB_::getDescriptor(USBSetup&)
  .text._ZN13PluggableUSB_12getShortNameEPc
-                0x000000000000514e       0x1e /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
-                0x000000000000514e                PluggableUSB_::getShortName(char*)
+                0x00000000000050ce       0x1e /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+                0x00000000000050ce                PluggableUSB_::getShortName(char*)
  .text._ZN13PluggableUSB_5setupER8USBSetup
-                0x000000000000516c       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
-                0x000000000000516c                PluggableUSB_::setup(USBSetup&)
+                0x00000000000050ec       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+                0x00000000000050ec                PluggableUSB_::setup(USBSetup&)
  .text._Z12PluggableUSBv
-                0x0000000000005190       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
-                0x0000000000005190                PluggableUSB()
+                0x0000000000005110       0x24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+                0x0000000000005110                PluggableUSB()
  .text.__aeabi_atexit
-                0x00000000000051b4        0xe /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libstdc++_s.a(atexit_arm.o)
-                0x00000000000051b4                __aeabi_atexit
- *fill*         0x00000000000051c2        0x2 
+                0x0000000000005134        0xe /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libstdc++_s.a(atexit_arm.o)
+                0x0000000000005134                __aeabi_atexit
+ *fill*         0x0000000000005142        0x2 
  .text.__fpclassifyd
-                0x00000000000051c4       0x60 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_fpclassify.o)
-                0x00000000000051c4                __fpclassifyd
- *fill*         0x0000000000005224        0x4 
- .text.sqrt     0x0000000000005228       0xc0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
-                0x0000000000005228                sqrt
+                0x0000000000005144       0x60 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_fpclassify.o)
+                0x0000000000005144                __fpclassifyd
+ *fill*         0x00000000000051a4        0x4 
+ .text.sqrt     0x00000000000051a8       0xc0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
+                0x00000000000051a8                sqrt
  .text.__ieee754_sqrt
-                0x00000000000052e8      0x1cc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-e_sqrt.o)
-                0x00000000000052e8                __ieee754_sqrt
- .text.matherr  0x00000000000054b4        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_matherr.o)
-                0x00000000000054b4                matherr
- .text          0x00000000000054b8       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_thumb1_case_uqi.o)
-                0x00000000000054b8                __gnu_thumb1_case_uqi
- .text          0x00000000000054cc       0x9c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
-                0x00000000000054cc                __udivsi3
-                0x00000000000054cc                __aeabi_uidiv
-                0x0000000000005554                __aeabi_uidivmod
- .text          0x0000000000005568        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_dvmd_tls.o)
-                0x0000000000005568                __aeabi_ldiv0
-                0x0000000000005568                __aeabi_idiv0
- .text          0x000000000000556c       0x7c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_arm_cmpdf2.o)
-                0x000000000000556c                __aeabi_cdrcmple
-                0x000000000000557c                __aeabi_cdcmple
-                0x000000000000557c                __aeabi_cdcmpeq
-                0x000000000000558c                __aeabi_dcmpeq
-                0x0000000000005598                __aeabi_dcmplt
-                0x00000000000055ac                __aeabi_dcmple
-                0x00000000000055c0                __aeabi_dcmpgt
-                0x00000000000055d4                __aeabi_dcmpge
- .text          0x00000000000055e8       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_fixunsdfsi.o)
-                0x00000000000055e8                __fixunsdfsi
-                0x00000000000055e8                __aeabi_d2uiz
- .text          0x0000000000005628      0x2c8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(addsf3.o)
-                0x0000000000005628                __aeabi_fadd
- .text          0x00000000000058f0      0x24c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
-                0x00000000000058f0                __aeabi_fdiv
- .text          0x0000000000005b3c      0x254 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
-                0x0000000000005b3c                __aeabi_fmul
- .text          0x0000000000005d90       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixsfsi.o)
-                0x0000000000005d90                __aeabi_f2iz
- .text          0x0000000000005dd0       0xb8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatsisf.o)
-                0x0000000000005dd0                __aeabi_i2f
- .text          0x0000000000005e88      0x638 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(adddf3.o)
-                0x0000000000005e88                __aeabi_dadd
- .text          0x00000000000064c0      0x648 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
-                0x00000000000064c0                __aeabi_ddiv
- .text          0x0000000000006b08       0x94 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(eqdf2.o)
-                0x0000000000006b08                __eqdf2
-                0x0000000000006b08                __nedf2
- .text          0x0000000000006b9c       0xfc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(gedf2.o)
-                0x0000000000006b9c                __gtdf2
-                0x0000000000006b9c                __gedf2
- .text          0x0000000000006c98       0xfc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(ledf2.o)
-                0x0000000000006c98                __ltdf2
-                0x0000000000006c98                __ledf2
- .text          0x0000000000006d94      0x520 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
-                0x0000000000006d94                __aeabi_dmul
- .text          0x00000000000072b4      0x654 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(subdf3.o)
-                0x00000000000072b4                __aeabi_dsub
- .text          0x0000000000007908       0x68 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixdfsi.o)
-                0x0000000000007908                __aeabi_d2iz
- .text          0x0000000000007970       0x68 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatunsidf.o)
-                0x0000000000007970                __aeabi_ui2d
- .text          0x00000000000079d8       0xa4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(extendsfdf2.o)
-                0x00000000000079d8                __aeabi_f2d
- .text          0x0000000000007a7c      0x118 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(truncdfsf2.o)
-                0x0000000000007a7c                __aeabi_d2f
- .text          0x0000000000007b94       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_clzsi2.o)
-                0x0000000000007b94                __clzsi2
+                0x0000000000005268      0x1cc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-e_sqrt.o)
+                0x0000000000005268                __ieee754_sqrt
+ .text.matherr  0x0000000000005434        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_matherr.o)
+                0x0000000000005434                matherr
+ .text          0x0000000000005438       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_thumb1_case_uqi.o)
+                0x0000000000005438                __gnu_thumb1_case_uqi
+ .text          0x000000000000544c       0x9c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
+                0x000000000000544c                __udivsi3
+                0x000000000000544c                __aeabi_uidiv
+                0x00000000000054d4                __aeabi_uidivmod
+ .text          0x00000000000054e8        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_dvmd_tls.o)
+                0x00000000000054e8                __aeabi_ldiv0
+                0x00000000000054e8                __aeabi_idiv0
+ .text          0x00000000000054ec       0x7c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_arm_cmpdf2.o)
+                0x00000000000054ec                __aeabi_cdrcmple
+                0x00000000000054fc                __aeabi_cdcmple
+                0x00000000000054fc                __aeabi_cdcmpeq
+                0x000000000000550c                __aeabi_dcmpeq
+                0x0000000000005518                __aeabi_dcmplt
+                0x000000000000552c                __aeabi_dcmple
+                0x0000000000005540                __aeabi_dcmpgt
+                0x0000000000005554                __aeabi_dcmpge
+ .text          0x0000000000005568       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_fixunsdfsi.o)
+                0x0000000000005568                __fixunsdfsi
+                0x0000000000005568                __aeabi_d2uiz
+ .text          0x00000000000055a8      0x2c8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(addsf3.o)
+                0x00000000000055a8                __aeabi_fadd
+ .text          0x0000000000005870      0x24c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
+                0x0000000000005870                __aeabi_fdiv
+ .text          0x0000000000005abc      0x254 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
+                0x0000000000005abc                __aeabi_fmul
+ .text          0x0000000000005d10       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixsfsi.o)
+                0x0000000000005d10                __aeabi_f2iz
+ .text          0x0000000000005d50       0xb8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatsisf.o)
+                0x0000000000005d50                __aeabi_i2f
+ .text          0x0000000000005e08      0x638 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(adddf3.o)
+                0x0000000000005e08                __aeabi_dadd
+ .text          0x0000000000006440      0x648 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
+                0x0000000000006440                __aeabi_ddiv
+ .text          0x0000000000006a88       0x94 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(eqdf2.o)
+                0x0000000000006a88                __eqdf2
+                0x0000000000006a88                __nedf2
+ .text          0x0000000000006b1c       0xfc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(gedf2.o)
+                0x0000000000006b1c                __gtdf2
+                0x0000000000006b1c                __gedf2
+ .text          0x0000000000006c18       0xfc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(ledf2.o)
+                0x0000000000006c18                __ltdf2
+                0x0000000000006c18                __ledf2
+ .text          0x0000000000006d14      0x520 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
+                0x0000000000006d14                __aeabi_dmul
+ .text          0x0000000000007234      0x654 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(subdf3.o)
+                0x0000000000007234                __aeabi_dsub
+ .text          0x0000000000007888       0x68 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixdfsi.o)
+                0x0000000000007888                __aeabi_d2iz
+ .text          0x00000000000078f0       0x68 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatunsidf.o)
+                0x00000000000078f0                __aeabi_ui2d
+ .text          0x0000000000007958       0xa4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(extendsfdf2.o)
+                0x0000000000007958                __aeabi_f2d
+ .text          0x00000000000079fc      0x118 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(truncdfsf2.o)
+                0x00000000000079fc                __aeabi_d2f
+ .text          0x0000000000007b14       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_clzsi2.o)
+                0x0000000000007b14                __clzsi2
  .text.__cxa_atexit
-                0x0000000000007bd0       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-cxa_atexit.o)
-                0x0000000000007bd0                __cxa_atexit
- .text.__errno  0x0000000000007bf0        0xc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-errno.o)
-                0x0000000000007bf0                __errno
+                0x0000000000007b50       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-cxa_atexit.o)
+                0x0000000000007b50                __cxa_atexit
+ .text.__errno  0x0000000000007b70        0xc /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-errno.o)
+                0x0000000000007b70                __errno
  .text.__libc_init_array
-                0x0000000000007bfc       0x4c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-init.o)
-                0x0000000000007bfc                __libc_init_array
- .text.malloc   0x0000000000007c48       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
-                0x0000000000007c48                malloc
- .text.free     0x0000000000007c5c       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
-                0x0000000000007c5c                free
- .text.memcpy   0x0000000000007c70       0x12 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
-                0x0000000000007c70                memcpy
- .text.memset   0x0000000000007c82       0x10 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
-                0x0000000000007c82                memset
- *fill*         0x0000000000007c92        0x2 
- .text._free_r  0x0000000000007c94       0x90 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-freer.o)
-                0x0000000000007c94                _free_r
+                0x0000000000007b7c       0x4c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-init.o)
+                0x0000000000007b7c                __libc_init_array
+ .text.malloc   0x0000000000007bc8       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
+                0x0000000000007bc8                malloc
+ .text.free     0x0000000000007bdc       0x14 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
+                0x0000000000007bdc                free
+ .text.memcpy   0x0000000000007bf0       0x12 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
+                0x0000000000007bf0                memcpy
+ .text.memset   0x0000000000007c02       0x10 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
+                0x0000000000007c02                memset
+ *fill*         0x0000000000007c12        0x2 
+ .text._free_r  0x0000000000007c14       0x90 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-freer.o)
+                0x0000000000007c14                _free_r
  .text._malloc_r
-                0x0000000000007d24       0xa8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-mallocr.o)
-                0x0000000000007d24                _malloc_r
- .text._sbrk_r  0x0000000000007dcc       0x24 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-sbrkr.o)
-                0x0000000000007dcc                _sbrk_r
- .text.strlen   0x0000000000007df0        0xe /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
-                0x0000000000007df0                strlen
- .text.strncpy  0x0000000000007dfe       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strncpy.o)
-                0x0000000000007dfe                strncpy
- *fill*         0x0000000000007e26        0x2 
- .text._sbrk    0x0000000000007e28       0x34 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(sbrk.o)
-                0x0000000000007e28                _sbrk
+                0x0000000000007ca4       0xa8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-mallocr.o)
+                0x0000000000007ca4                _malloc_r
+ .text._sbrk_r  0x0000000000007d4c       0x24 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-sbrkr.o)
+                0x0000000000007d4c                _sbrk_r
+ .text.strlen   0x0000000000007d70        0xe /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
+                0x0000000000007d70                strlen
+ .text.strncpy  0x0000000000007d7e       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strncpy.o)
+                0x0000000000007d7e                strncpy
+ *fill*         0x0000000000007da6        0x2 
+ .text._sbrk    0x0000000000007da8       0x34 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(sbrk.o)
+                0x0000000000007da8                _sbrk
  *(.init)
- .init          0x0000000000007e5c        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
-                0x0000000000007e5c                _init
- .init          0x0000000000007e60        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
+ .init          0x0000000000007ddc        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
+                0x0000000000007ddc                _init
+ .init          0x0000000000007de0        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
  *(.fini)
- .fini          0x0000000000007e68        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
-                0x0000000000007e68                _fini
- .fini          0x0000000000007e6c        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
+ .fini          0x0000000000007de8        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
+                0x0000000000007de8                _fini
+ .fini          0x0000000000007dec        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1412,118 +1412,118 @@ LOAD /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- *fill*         0x0000000000007e74        0x4 
+ *fill*         0x0000000000007df4        0x4 
  .rodata._ZTV15Adafruit_Sensor
-                0x0000000000007e78       0x20 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                0x0000000000007e78                vtable for Adafruit_Sensor
+                0x0000000000007df8       0x20 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                0x0000000000007df8                vtable for Adafruit_Sensor
  .rodata.str1.1
-                0x0000000000007e98       0x87 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                                         0x88 (size before relaxing)
- *fill*         0x0000000000007f1f        0x1 
+                0x0000000000007e18       0x4b /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                                         0x4c (size before relaxing)
+ *fill*         0x0000000000007e63        0x5 
  .rodata._ZTV7TwoWire
-                0x0000000000007f20       0x28 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
-                0x0000000000007f20                vtable for TwoWire
+                0x0000000000007e68       0x28 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+                0x0000000000007e68                vtable for TwoWire
  .rodata.str1.1
-                0x0000000000007f48        0x7 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- *fill*         0x0000000000007f4f        0x1 
+                0x0000000000007e90        0x7 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ *fill*         0x0000000000007e97        0x1 
  .rodata._ZTV29Adafruit_LSM303_Accel_Unified
-                0x0000000000007f50       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
-                0x0000000000007f50                vtable for Adafruit_LSM303_Accel_Unified
+                0x0000000000007e98       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+                0x0000000000007e98                vtable for Adafruit_LSM303_Accel_Unified
  .rodata.armBitRevTable
-                0x0000000000007f70      0x800 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
-                0x0000000000007f70                armBitRevTable
+                0x0000000000007eb8      0x800 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+                0x0000000000007eb8                armBitRevTable
  .rodata.twiddleCoefQ15
-                0x0000000000008770     0x3000 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
-                0x0000000000008770                twiddleCoefQ15
+                0x00000000000086b8     0x3000 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+                0x00000000000086b8                twiddleCoefQ15
  .rodata.window_hanning_1024
-                0x000000000000b770      0x800 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000b770                window_hanning_1024
+                0x000000000000b6b8      0x800 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000b6b8                window_hanning_1024
  .rodata.window_hanning_128
-                0x000000000000bf70      0x100 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000bf70                window_hanning_128
+                0x000000000000beb8      0x100 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000beb8                window_hanning_128
  .rodata.window_hanning_512
-                0x000000000000c070      0x400 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000c070                window_hanning_512
+                0x000000000000bfb8      0x400 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000bfb8                window_hanning_512
  .rodata.window_hanning_64
-                0x000000000000c470       0x80 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000c470                window_hanning_64
+                0x000000000000c3b8       0x80 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000c3b8                window_hanning_64
  .rodata.window_hanning_2048
-                0x000000000000c4f0     0x1000 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000c4f0                window_hanning_2048
+                0x000000000000c438     0x1000 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000c438                window_hanning_2048
  .rodata.window_hanning_256
-                0x000000000000d4f0      0x200 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000d4f0                window_hanning_256
+                0x000000000000d438      0x200 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000d438                window_hanning_256
  .rodata.window_hanning_16
-                0x000000000000d6f0       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000d6f0                window_hanning_16
+                0x000000000000d638       0x20 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000d638                window_hanning_16
  .rodata.window_hanning_32
-                0x000000000000d710       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
-                0x000000000000d710                window_hanning_32
+                0x000000000000d658       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+                0x000000000000d658                window_hanning_32
  .rodata.g_APinDescription
-                0x000000000000d750      0x450 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
-                0x000000000000d750                g_APinDescription
+                0x000000000000d698      0x450 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+                0x000000000000d698                g_APinDescription
  .rodata.str1.1
-                0x000000000000dba0        0xf /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- *fill*         0x000000000000dbaf        0x1 
+                0x000000000000dae8        0xf /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ *fill*         0x000000000000daf7        0x1 
  .rodata._ZTV7Serial_
-                0x000000000000dbb0       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
-                0x000000000000dbb0                vtable for Serial_
+                0x000000000000daf8       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+                0x000000000000daf8                vtable for Serial_
  .rodata._ZTV26DoubleBufferedEPOutHandler
-                0x000000000000dbd8       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
-                0x000000000000dbd8                vtable for DoubleBufferedEPOutHandler
+                0x000000000000db20       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000db20                vtable for DoubleBufferedEPOutHandler
  .rodata._ZL19STRING_MANUFACTURER
-                0x000000000000dbf8        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000db40        0xc /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .rodata._ZL15STRING_LANGUAGE
-                0x000000000000dc04        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000db4c        0x4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .rodata._ZL21USB_DeviceDescriptorB
-                0x000000000000dc08       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+                0x000000000000db50       0x12 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
  .rodata._ZL14STRING_PRODUCT
-                0x000000000000dc1a        0xd /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- *fill*         0x000000000000dc27        0x1 
+                0x000000000000db62        0xd /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ *fill*         0x000000000000db6f        0x1 
  .rodata._ZTV4Uart
-                0x000000000000dc28       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
-                0x000000000000dc28                vtable for Uart
+                0x000000000000db70       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+                0x000000000000db70                vtable for Uart
  .rodata.str1.4
-                0x000000000000dc60        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
- .rodata        0x000000000000dc68       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
- .rodata        0x000000000000dca8       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
- .rodata        0x000000000000dce8       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
- .rodata        0x000000000000dd28       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
+                0x000000000000dba8        0x8 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
+ .rodata        0x000000000000dbb0       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
+ .rodata        0x000000000000dbf0       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
+ .rodata        0x000000000000dc30       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
+ .rodata        0x000000000000dc70       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
  .rodata.str1.1
-                0x000000000000dd68        0x2 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-impure.o)
+                0x000000000000dcb0        0x2 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-impure.o)
  *(.eh_frame*)
- *fill*         0x000000000000dd6a        0x2 
- .eh_frame      0x000000000000dd6c        0x0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
- .eh_frame      0x000000000000dd6c        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtend.o
+ *fill*         0x000000000000dcb2        0x2 
+ .eh_frame      0x000000000000dcb4        0x0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
+ .eh_frame      0x000000000000dcb4        0x4 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtend.o
 
-.glue_7         0x000000000000dd70        0x0
+.glue_7         0x000000000000dcb8        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x000000000000dd70        0x0
+.glue_7t        0x000000000000dcb8        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x000000000000dd70        0x0
+.vfp11_veneer   0x000000000000dcb8        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x000000000000dd70        0x0
+.v4_bx          0x000000000000dcb8        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x000000000000dd70        0x0
+.iplt           0x000000000000dcb8        0x0
  .iplt          0x0000000000000000        0x0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
-.rel.dyn        0x000000000000dd70        0x0
+.rel.dyn        0x000000000000dcb8        0x0
  .rel.iplt      0x0000000000000000        0x0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000000dd70                __exidx_start = .
+                0x000000000000dcb8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000000dd70                __exidx_end = .
-                0x000000000000dd70                __etext = .
+                0x000000000000dcb8                __exidx_end = .
+                0x000000000000dcb8                __etext = .
 
-.data           0x0000000020000000      0x110 load address 0x000000000000dd70
+.data           0x0000000020000000      0x110 load address 0x000000000000dcb8
                 0x0000000020000000                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -1583,10 +1583,10 @@ LOAD /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
                 0x0000000020000110                . = ALIGN (0x10)
                 0x0000000020000110                __data_end__ = .
 
-.igot.plt       0x0000000020000110        0x0 load address 0x000000000000de80
+.igot.plt       0x0000000020000110        0x0 load address 0x000000000000ddc8
  .igot.plt      0x0000000000000000        0x0 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
-.bss            0x0000000020000110     0x2cf0 load address 0x000000000000de80
+.bss            0x0000000020000110     0x2cf0 load address 0x000000000000ddc8
                 0x0000000020000110                . = ALIGN (0x4)
                 0x0000000020000110                __bss_start__ = .
  *(.bss*)
@@ -1867,79 +1867,79 @@ OUTPUT(/home/lewis/Arduino/vibration_measurement/build/vibration_measurement.ino
  .comment       0x0000000000000000       0x81 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
  .comment       0x0000000000000000       0x81 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_info     0x0000000000000000    0x30d7e
- .debug_info    0x0000000000000000     0x10dc /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_info    0x00000000000010dc     0x5148 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_info    0x0000000000006224     0x215c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_info    0x0000000000008380      0x274 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
- .debug_info    0x00000000000085f4      0x667 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_info    0x0000000000008c5b      0x2b8 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
- .debug_info    0x0000000000008f13     0x5536 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
- .debug_info    0x000000000000e449     0x2758 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_info    0x0000000000010ba1     0x3ada /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_info    0x000000000001467b     0x2cc5 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_info    0x0000000000017340     0x7e24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_info    0x000000000001f164     0x58e9 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_info    0x0000000000024a4d       0xa4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
- .debug_info    0x0000000000024af1      0x4d6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_info    0x0000000000024fc7      0x362 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_info    0x0000000000025329       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
- .debug_info    0x0000000000025389      0x7e0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
- .debug_info    0x0000000000025b69      0x1a1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_info    0x0000000000025d0a     0x28ff /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_info    0x0000000000028609     0x1ddc /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_info    0x000000000002a3e5     0x435c /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_info    0x000000000002e741      0xb8f /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_info    0x000000000002f2d0      0xb78 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_info    0x000000000002fe48      0x846 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
- .debug_info    0x000000000003068e      0x6f0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+.debug_info     0x0000000000000000    0x30d2f
+ .debug_info    0x0000000000000000     0x108d /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_info    0x000000000000108d     0x5148 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_info    0x00000000000061d5     0x215c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_info    0x0000000000008331      0x274 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+ .debug_info    0x00000000000085a5      0x667 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_info    0x0000000000008c0c      0x2b8 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+ .debug_info    0x0000000000008ec4     0x5536 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_info    0x000000000000e3fa     0x2758 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_info    0x0000000000010b52     0x3ada /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_info    0x000000000001462c     0x2cc5 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_info    0x00000000000172f1     0x7e24 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_info    0x000000000001f115     0x58e9 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_info    0x00000000000249fe       0xa4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_info    0x0000000000024aa2      0x4d6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_info    0x0000000000024f78      0x362 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_info    0x00000000000252da       0x60 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_info    0x000000000002533a      0x7e0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_info    0x0000000000025b1a      0x1a1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_info    0x0000000000025cbb     0x28ff /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_info    0x00000000000285ba     0x1ddc /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_info    0x000000000002a396     0x435c /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_info    0x000000000002e6f2      0xb8f /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_info    0x000000000002f281      0xb78 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_info    0x000000000002fdf9      0x846 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_info    0x000000000003063f      0x6f0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_abbrev   0x0000000000000000     0x4ea2
- .debug_abbrev  0x0000000000000000      0x549 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_abbrev  0x0000000000000549      0x6b8 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_abbrev  0x0000000000000c01      0x60c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_abbrev  0x000000000000120d       0x93 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
- .debug_abbrev  0x00000000000012a0      0x192 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_abbrev  0x0000000000001432       0x93 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
- .debug_abbrev  0x00000000000014c5      0x32b /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
- .debug_abbrev  0x00000000000017f0      0x487 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_abbrev  0x0000000000001c77      0x48d /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_abbrev  0x0000000000002104      0x679 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_abbrev  0x000000000000277d      0x958 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_abbrev  0x00000000000030d5      0x69e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_abbrev  0x0000000000003773       0x45 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
- .debug_abbrev  0x00000000000037b8      0x159 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_abbrev  0x0000000000003911      0x158 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_abbrev  0x0000000000003a69       0x47 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
- .debug_abbrev  0x0000000000003ab0      0x22f /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
- .debug_abbrev  0x0000000000003cdf       0xd7 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_abbrev  0x0000000000003db6      0x17a /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_abbrev  0x0000000000003f30      0x281 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_abbrev  0x00000000000041b1      0x380 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_abbrev  0x0000000000004531      0x201 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_abbrev  0x0000000000004732      0x21b /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_abbrev  0x000000000000494d      0x264 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
- .debug_abbrev  0x0000000000004bb1      0x2f1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+.debug_abbrev   0x0000000000000000     0x4ec0
+ .debug_abbrev  0x0000000000000000      0x567 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_abbrev  0x0000000000000567      0x6b8 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_abbrev  0x0000000000000c1f      0x60c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_abbrev  0x000000000000122b       0x93 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+ .debug_abbrev  0x00000000000012be      0x192 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_abbrev  0x0000000000001450       0x93 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+ .debug_abbrev  0x00000000000014e3      0x32b /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_abbrev  0x000000000000180e      0x487 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_abbrev  0x0000000000001c95      0x48d /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_abbrev  0x0000000000002122      0x679 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_abbrev  0x000000000000279b      0x958 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_abbrev  0x00000000000030f3      0x69e /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_abbrev  0x0000000000003791       0x45 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_abbrev  0x00000000000037d6      0x159 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_abbrev  0x000000000000392f      0x158 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_abbrev  0x0000000000003a87       0x47 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_abbrev  0x0000000000003ace      0x22f /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_abbrev  0x0000000000003cfd       0xd7 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_abbrev  0x0000000000003dd4      0x17a /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_abbrev  0x0000000000003f4e      0x281 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_abbrev  0x00000000000041cf      0x380 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_abbrev  0x000000000000454f      0x201 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_abbrev  0x0000000000004750      0x21b /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_abbrev  0x000000000000496b      0x264 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_abbrev  0x0000000000004bcf      0x2f1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_loc      0x0000000000000000     0x813e
- .debug_loc     0x0000000000000000      0x34c /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_loc     0x000000000000034c      0x912 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_loc     0x0000000000000c5e      0x938 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_loc     0x0000000000001596      0xb63 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_loc     0x00000000000020f9     0x1155 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_loc     0x000000000000324e      0xa97 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_loc     0x0000000000003ce5      0x565 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_loc     0x000000000000424a     0x2674 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_loc     0x00000000000068be      0xa46 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_loc     0x0000000000007304       0x7b /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_loc     0x000000000000737f       0xf4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_loc     0x0000000000007473       0x84 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_loc     0x00000000000074f7       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_loc     0x000000000000754f       0xe9 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_loc     0x0000000000007638      0x5ec /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_loc     0x0000000000007c24      0x19f /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_loc     0x0000000000007dc3      0x123 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_loc     0x0000000000007ee6      0x258 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+.debug_loc      0x0000000000000000     0x8199
+ .debug_loc     0x0000000000000000      0x3a7 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_loc     0x00000000000003a7      0x912 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_loc     0x0000000000000cb9      0x938 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_loc     0x00000000000015f1      0xb63 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_loc     0x0000000000002154     0x1155 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_loc     0x00000000000032a9      0xa97 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_loc     0x0000000000003d40      0x565 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_loc     0x00000000000042a5     0x2674 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_loc     0x0000000000006919      0xa46 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_loc     0x000000000000735f       0x7b /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_loc     0x00000000000073da       0xf4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_loc     0x00000000000074ce       0x84 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_loc     0x0000000000007552       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_loc     0x00000000000075aa       0xe9 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_loc     0x0000000000007693      0x5ec /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_loc     0x0000000000007c7f      0x19f /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_loc     0x0000000000007e1e      0x123 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_loc     0x0000000000007f41      0x258 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
 .debug_aranges  0x0000000000000000      0xb98
  .debug_aranges
@@ -1993,170 +1993,170 @@ OUTPUT(/home/lewis/Arduino/vibration_measurement/build/vibration_measurement.ino
  .debug_aranges
                 0x0000000000000b48       0x50 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_ranges   0x0000000000000000     0x18b8
- .debug_ranges  0x0000000000000000       0xf0 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_ranges  0x00000000000000f0      0x220 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_ranges  0x0000000000000310      0x290 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_ranges  0x00000000000005a0       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_ranges  0x00000000000005e0       0x20 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
- .debug_ranges  0x0000000000000600      0x290 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_ranges  0x0000000000000890      0x2a0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_ranges  0x0000000000000b30      0x130 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_ranges  0x0000000000000c60      0x7a8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_ranges  0x0000000000001408      0x220 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_ranges  0x0000000000001628       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
- .debug_ranges  0x0000000000001640       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_ranges  0x0000000000001670       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_ranges  0x0000000000001698       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
- .debug_ranges  0x00000000000016b8       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
- .debug_ranges  0x00000000000016d0       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_ranges  0x00000000000016f8       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_ranges  0x0000000000001708       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_ranges  0x0000000000001730       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_ranges  0x0000000000001768       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_ranges  0x0000000000001788       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_ranges  0x00000000000017b0       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
- .debug_ranges  0x00000000000017e8       0xd0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+.debug_ranges   0x0000000000000000     0x18f8
+ .debug_ranges  0x0000000000000000      0x130 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_ranges  0x0000000000000130      0x220 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_ranges  0x0000000000000350      0x290 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_ranges  0x00000000000005e0       0x40 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_ranges  0x0000000000000620       0x20 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_ranges  0x0000000000000640      0x290 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_ranges  0x00000000000008d0      0x2a0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_ranges  0x0000000000000b70      0x130 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_ranges  0x0000000000000ca0      0x7a8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_ranges  0x0000000000001448      0x220 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_ranges  0x0000000000001668       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_ranges  0x0000000000001680       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_ranges  0x00000000000016b0       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_ranges  0x00000000000016d8       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_ranges  0x00000000000016f8       0x18 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_ranges  0x0000000000001710       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_ranges  0x0000000000001738       0x10 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_ranges  0x0000000000001748       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_ranges  0x0000000000001770       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_ranges  0x00000000000017a8       0x20 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_ranges  0x00000000000017c8       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_ranges  0x00000000000017f0       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_ranges  0x0000000000001828       0xd0 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_line     0x0000000000000000     0x6e94
- .debug_line    0x0000000000000000      0x5ed /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_line    0x00000000000005ed      0x787 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_line    0x0000000000000d74      0x732 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_line    0x00000000000014a6      0x1c0 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
- .debug_line    0x0000000000001666      0x498 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_line    0x0000000000001afe      0x1b9 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
- .debug_line    0x0000000000001cb7      0x2c1 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
- .debug_line    0x0000000000001f78      0x658 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_line    0x00000000000025d0      0x93d /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_line    0x0000000000002f0d      0x618 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_line    0x0000000000003525      0xee2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_line    0x0000000000004407      0x783 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_line    0x0000000000004b8a       0x91 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
- .debug_line    0x0000000000004c1b      0x2ce /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_line    0x0000000000004ee9      0x2c5 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_line    0x00000000000051ae       0xa2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
- .debug_line    0x0000000000005250      0x28f /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
- .debug_line    0x00000000000054df      0x1a3 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_line    0x0000000000005682      0x383 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_line    0x0000000000005a05      0x3b1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_line    0x0000000000005db6      0x4b4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_line    0x000000000000626a      0x31a /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_line    0x0000000000006584      0x31d /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_line    0x00000000000068a1      0x326 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
- .debug_line    0x0000000000006bc7      0x2cd /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+.debug_line     0x0000000000000000     0x6e91
+ .debug_line    0x0000000000000000      0x5ea /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_line    0x00000000000005ea      0x787 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_line    0x0000000000000d71      0x732 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_line    0x00000000000014a3      0x1c0 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+ .debug_line    0x0000000000001663      0x498 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_line    0x0000000000001afb      0x1b9 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+ .debug_line    0x0000000000001cb4      0x2c1 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_line    0x0000000000001f75      0x658 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_line    0x00000000000025cd      0x93d /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_line    0x0000000000002f0a      0x618 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_line    0x0000000000003522      0xee2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_line    0x0000000000004404      0x783 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_line    0x0000000000004b87       0x91 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_line    0x0000000000004c18      0x2ce /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_line    0x0000000000004ee6      0x2c5 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_line    0x00000000000051ab       0xa2 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_line    0x000000000000524d      0x28f /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_line    0x00000000000054dc      0x1a3 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_line    0x000000000000567f      0x383 /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_line    0x0000000000005a02      0x3b1 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_line    0x0000000000005db3      0x4b4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_line    0x0000000000006267      0x31a /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_line    0x0000000000006581      0x31d /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_line    0x000000000000689e      0x326 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_line    0x0000000000006bc4      0x2cd /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
 
-.debug_str      0x0000000000000000     0xa068
- .debug_str     0x0000000000000000      0x849 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-                                        0x96a (size before relaxing)
- .debug_str     0x0000000000000849     0x2dad /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+.debug_str      0x0000000000000000     0xa06a
+ .debug_str     0x0000000000000000      0x821 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+                                        0x942 (size before relaxing)
+ .debug_str     0x0000000000000821     0x2dd7 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
                                        0x3757 (size before relaxing)
- .debug_str     0x00000000000035f6      0xde3 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_str     0x00000000000035f8      0xde3 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
                                        0x1609 (size before relaxing)
- .debug_str     0x00000000000043d9      0x172 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
+ .debug_str     0x00000000000043db      0x172 /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/arm_common_tables.c.o
                                         0x276 (size before relaxing)
- .debug_str     0x000000000000454b      0x1aa /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_str     0x000000000000454d      0x1aa /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
                                         0x3b4 (size before relaxing)
- .debug_str     0x00000000000046f5       0x5f /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
+ .debug_str     0x00000000000046f7       0x5f /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftwindows.c.o
                                         0x299 (size before relaxing)
- .debug_str     0x0000000000004754      0x8fc /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_str     0x0000000000004756      0x8fc /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
                                        0x2f8b (size before relaxing)
- .debug_str     0x0000000000005050      0x361 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_str     0x0000000000005052      0x361 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
                                        0x100c (size before relaxing)
- .debug_str     0x00000000000053b1      0x453 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_str     0x00000000000053b3      0x453 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
                                        0x22ec (size before relaxing)
- .debug_str     0x0000000000005804      0xbd6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_str     0x0000000000005806      0xbd6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
                                        0x1f08 (size before relaxing)
- .debug_str     0x00000000000063da     0x2706 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_str     0x00000000000063dc     0x2706 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
                                        0x3c0a (size before relaxing)
- .debug_str     0x0000000000008ae0      0x282 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_str     0x0000000000008ae2      0x282 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
                                        0x3a77 (size before relaxing)
- .debug_str     0x0000000000008d62       0x7c /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_str     0x0000000000008d64       0x7c /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
                                         0x221 (size before relaxing)
- .debug_str     0x0000000000008dde      0x3de /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_str     0x0000000000008de0      0x3de /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
                                         0x5ee (size before relaxing)
- .debug_str     0x00000000000091bc       0xae /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_str     0x00000000000091be       0xae /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
                                         0x2b7 (size before relaxing)
- .debug_str     0x000000000000926a       0x6a /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_str     0x000000000000926c       0x6a /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
                                         0x129 (size before relaxing)
- .debug_str     0x00000000000092d4       0xa6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_str     0x00000000000092d6       0xa6 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
                                         0x980 (size before relaxing)
- .debug_str     0x000000000000937a       0x83 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_str     0x000000000000937c       0x83 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
                                         0x26a (size before relaxing)
- .debug_str     0x00000000000093fd      0x6ad /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_str     0x00000000000093ff      0x6ad /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
                                         0xd3b (size before relaxing)
- .debug_str     0x0000000000009aaa      0x197 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_str     0x0000000000009aac      0x197 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
                                         0xbda (size before relaxing)
- .debug_str     0x0000000000009c41      0x144 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_str     0x0000000000009c43      0x144 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
                                        0x15d7 (size before relaxing)
- .debug_str     0x0000000000009d85       0x82 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_str     0x0000000000009d87       0x82 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
                                         0x965 (size before relaxing)
- .debug_str     0x0000000000009e07       0x69 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_str     0x0000000000009e09       0x69 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
                                         0x97c (size before relaxing)
- .debug_str     0x0000000000009e70      0x171 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_str     0x0000000000009e72      0x171 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
                                         0x5c3 (size before relaxing)
- .debug_str     0x0000000000009fe1       0x87 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+ .debug_str     0x0000000000009fe3       0x87 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
                                         0x5dd (size before relaxing)
 
-.debug_frame    0x0000000000000000     0x22a0
- .debug_frame   0x0000000000000000      0x148 /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
- .debug_frame   0x0000000000000148      0x254 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
- .debug_frame   0x000000000000039c      0x2ec /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
- .debug_frame   0x0000000000000688       0x8c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
- .debug_frame   0x0000000000000714       0x64 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
- .debug_frame   0x0000000000000778      0x330 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
- .debug_frame   0x0000000000000aa8      0x458 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
- .debug_frame   0x0000000000000f00      0x214 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
- .debug_frame   0x0000000000001114      0x498 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
- .debug_frame   0x00000000000015ac      0x1c8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
- .debug_frame   0x0000000000001774       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
- .debug_frame   0x00000000000017a4       0x7c /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
- .debug_frame   0x0000000000001820       0x78 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
- .debug_frame   0x0000000000001898       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
- .debug_frame   0x00000000000018d8       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
- .debug_frame   0x0000000000001910       0x70 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
- .debug_frame   0x0000000000001980       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
- .debug_frame   0x00000000000019ac       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
- .debug_frame   0x00000000000019d4       0x90 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
- .debug_frame   0x0000000000001a64       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
- .debug_frame   0x0000000000001abc       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
- .debug_frame   0x0000000000001aec       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
- .debug_frame   0x0000000000001b2c       0xc4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
- .debug_frame   0x0000000000001bf0       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libstdc++_s.a(atexit_arm.o)
- .debug_frame   0x0000000000001c18       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_fpclassify.o)
- .debug_frame   0x0000000000001c44       0x38 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
- .debug_frame   0x0000000000001c7c       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-e_sqrt.o)
- .debug_frame   0x0000000000001cb8       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_matherr.o)
- .debug_frame   0x0000000000001cd8       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000000000001cf8       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_fixunsdfsi.o)
- .debug_frame   0x0000000000001d24       0x30 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(addsf3.o)
- .debug_frame   0x0000000000001d54       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
- .debug_frame   0x0000000000001d90       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
- .debug_frame   0x0000000000001dcc       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixsfsi.o)
- .debug_frame   0x0000000000001dec       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatsisf.o)
- .debug_frame   0x0000000000001e18       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(adddf3.o)
- .debug_frame   0x0000000000001e54       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
- .debug_frame   0x0000000000001e90       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(eqdf2.o)
- .debug_frame   0x0000000000001ecc       0x38 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(gedf2.o)
- .debug_frame   0x0000000000001f04       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(ledf2.o)
- .debug_frame   0x0000000000001f40       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
- .debug_frame   0x0000000000001f7c       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(subdf3.o)
- .debug_frame   0x0000000000001fb8       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixdfsi.o)
- .debug_frame   0x0000000000001fe4       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatunsidf.o)
- .debug_frame   0x000000000000200c       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(extendsfdf2.o)
- .debug_frame   0x0000000000002038       0x30 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(truncdfsf2.o)
- .debug_frame   0x0000000000002068       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-cxa_atexit.o)
- .debug_frame   0x0000000000002094       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-errno.o)
- .debug_frame   0x00000000000020b4       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-init.o)
- .debug_frame   0x00000000000020e0       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
- .debug_frame   0x0000000000002120       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000000000002148       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
- .debug_frame   0x0000000000002168       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000002194       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00000000000021c0       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-sbrkr.o)
- .debug_frame   0x00000000000021ec       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
- .debug_frame   0x000000000000220c       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strncpy.o)
- .debug_frame   0x0000000000002238       0x48 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-reent.o)
- .debug_frame   0x0000000000002280       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(sbrk.o)
+.debug_frame    0x0000000000000000     0x22a4
+ .debug_frame   0x0000000000000000      0x14c /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+ .debug_frame   0x000000000000014c      0x254 /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
+ .debug_frame   0x00000000000003a0      0x2ec /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_LSM303DLHC/Adafruit_LSM303_U.cpp.o
+ .debug_frame   0x000000000000068c       0x8c /home/lewis/Arduino/vibration_measurement/build/libraries/Adafruit_Zero_FFT_Library-1.0.1/fftutil.c.o
+ .debug_frame   0x0000000000000718       0x64 /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
+ .debug_frame   0x000000000000077c      0x330 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Print.cpp.o)
+ .debug_frame   0x0000000000000aac      0x458 /home/lewis/Arduino/vibration_measurement/build/core/core.a(SERCOM.cpp.o)
+ .debug_frame   0x0000000000000f04      0x214 /home/lewis/Arduino/vibration_measurement/build/core/core.a(CDC.cpp.o)
+ .debug_frame   0x0000000000001118      0x498 /home/lewis/Arduino/vibration_measurement/build/core/core.a(USBCore.cpp.o)
+ .debug_frame   0x00000000000015b0      0x1c8 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Uart.cpp.o)
+ .debug_frame   0x0000000000001778       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(abi.cpp.o)
+ .debug_frame   0x00000000000017a8       0x7c /home/lewis/Arduino/vibration_measurement/build/core/core.a(cortex_handlers.c.o)
+ .debug_frame   0x0000000000001824       0x78 /home/lewis/Arduino/vibration_measurement/build/core/core.a(delay.c.o)
+ .debug_frame   0x000000000000189c       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(hooks.c.o)
+ .debug_frame   0x00000000000018dc       0x38 /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
+ .debug_frame   0x0000000000001914       0x70 /home/lewis/Arduino/vibration_measurement/build/core/core.a(new.cpp.o)
+ .debug_frame   0x0000000000001984       0x2c /home/lewis/Arduino/vibration_measurement/build/core/core.a(startup.c.o)
+ .debug_frame   0x00000000000019b0       0x28 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
+ .debug_frame   0x00000000000019d8       0x90 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
+ .debug_frame   0x0000000000001a68       0x58 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_digital.c.o)
+ .debug_frame   0x0000000000001ac0       0x30 /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_private.c.o)
+ .debug_frame   0x0000000000001af0       0x40 /home/lewis/Arduino/vibration_measurement/build/core/core.a(Reset.cpp.o)
+ .debug_frame   0x0000000000001b30       0xc4 /home/lewis/Arduino/vibration_measurement/build/core/core.a(PluggableUSB.cpp.o)
+ .debug_frame   0x0000000000001bf4       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libstdc++_s.a(atexit_arm.o)
+ .debug_frame   0x0000000000001c1c       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_fpclassify.o)
+ .debug_frame   0x0000000000001c48       0x38 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-w_sqrt.o)
+ .debug_frame   0x0000000000001c80       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x0000000000001cbc       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x0000000000001cdc       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000001cfc       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(_fixunsdfsi.o)
+ .debug_frame   0x0000000000001d28       0x30 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(addsf3.o)
+ .debug_frame   0x0000000000001d58       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divsf3.o)
+ .debug_frame   0x0000000000001d94       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(mulsf3.o)
+ .debug_frame   0x0000000000001dd0       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixsfsi.o)
+ .debug_frame   0x0000000000001df0       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatsisf.o)
+ .debug_frame   0x0000000000001e1c       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(adddf3.o)
+ .debug_frame   0x0000000000001e58       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(divdf3.o)
+ .debug_frame   0x0000000000001e94       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(eqdf2.o)
+ .debug_frame   0x0000000000001ed0       0x38 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(gedf2.o)
+ .debug_frame   0x0000000000001f08       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(ledf2.o)
+ .debug_frame   0x0000000000001f44       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(muldf3.o)
+ .debug_frame   0x0000000000001f80       0x3c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(subdf3.o)
+ .debug_frame   0x0000000000001fbc       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(fixdfsi.o)
+ .debug_frame   0x0000000000001fe8       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(floatunsidf.o)
+ .debug_frame   0x0000000000002010       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(extendsfdf2.o)
+ .debug_frame   0x000000000000203c       0x30 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/libgcc.a(truncdfsf2.o)
+ .debug_frame   0x000000000000206c       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x0000000000002098       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-errno.o)
+ .debug_frame   0x00000000000020b8       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-init.o)
+ .debug_frame   0x00000000000020e4       0x40 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-malloc.o)
+ .debug_frame   0x0000000000002124       0x28 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x000000000000214c       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
+ .debug_frame   0x000000000000216c       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000002198       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00000000000021c4       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-sbrkr.o)
+ .debug_frame   0x00000000000021f0       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
+ .debug_frame   0x0000000000002210       0x2c /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strncpy.o)
+ .debug_frame   0x000000000000223c       0x48 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-reent.o)
+ .debug_frame   0x0000000000002284       0x20 /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libnosys.a(sbrk.o)
 
 Cross Reference Table
 
@@ -2762,9 +2762,9 @@ g_APinDescription                                 /home/lewis/Arduino/vibration_
                                                   /home/lewis/Arduino/vibration_measurement/build/libraries/Wire/Wire.cpp.o
 g_apTCInstances                                   /home/lewis/Arduino/vibration_measurement/build/core/variant.cpp.o
                                                   /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring_analog.c.o)
-get_cos_sim(float, float*, float*, float, float)  /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+get_cos_sim(float, float*, float*)                /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
 get_direction(float*, float*, float)              /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
-get_vector_len(float, float*)                     /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
+get_vector_len(float*)                            /home/lewis/Arduino/vibration_measurement/build/sketch/vibration_measurement.ino.cpp.o
 hardware_init_hook                                /home/lewis/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
 init                                              /home/lewis/Arduino/vibration_measurement/build/core/core.a(wiring.c.o)
                                                   /home/lewis/Arduino/vibration_measurement/build/core/core.a(main.cpp.o)
