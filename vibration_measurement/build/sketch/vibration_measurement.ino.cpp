@@ -19,37 +19,39 @@
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 
 
-const int NS = 10; // Number of samples to take in for a fft batch (?global?)
-const int DL = 50; // Duratoin of delay within loop
+const int NS = 500; // Number of samples to take in for a fft batch (?global?)
+const int DL = 100; // Duratoin of delay within loop
 
 #line 22 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 void setup();
-#line 40 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
+#line 42 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 float get_vector_len(float vector[]);
-#line 50 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
+#line 52 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 void get_direction(float direct[3], float accel_values[3], float leng);
-#line 57 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
+#line 59 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 void read_imu(float accel_values[3]);
-#line 70 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
-void get_cos_sim(float sim, float i[3], float f[3]);
-#line 77 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
-void shape_array(float float_array[NS], int16_t int_array[NS]);
+#line 71 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
+float get_cos_sim(float initial[3], float finall[3]);
 #line 85 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
+void shape_array(float float_array[NS], int16_t int_array[NS]);
+#line 93 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 void loop();
 #line 22 "/home/lewis/Arduino/vibration_measurement/vibration_measurement.ino"
 void setup()
 {
+  pinMode(LED_BUILTIN, OUTPUT);
+
   #ifndef ESP8266
-    while (!Serial);     // will pause Zero, Leonardo, etc until serial console opens
+    while (!SerialUSB);     // will pause Zero, Leonardo, etc until serial console opens
   #endif
-  Serial.begin(9600);
-  Serial.println("Accelerometer Test"); Serial.println("");
+  SerialUSB.begin(9600);
+  SerialUSB.println("Accelerometer Test"); SerialUSB.println("");
 
   /* Initialise the sensor */
   if(!accel.begin())
   {
     /* There was a problem detecting the ADXL345 ... check your connections */
-    Serial.println("Ooops, no LSM303 detected ... Check your wiring!");
+    SerialUSB.println("Ooops, no LSM303 detected ... Check your wiring!");
     while(1);
   }
 
@@ -79,17 +81,23 @@ void read_imu(float accel_values[3]){
     accel.getEvent(&event);
 
     /* 1. get the x,y,z coordinates of the accelerometer */
-
     accel_values[0] = event.acceleration.x;
     accel_values[1] = event.acceleration.y;
     accel_values[2] = event.acceleration.z;
 }
 
-void get_cos_sim(float sim, float i[3], float f[3]){
+float get_cos_sim(float initial[3], float finall[3]){
     /* compute cosine similarity of two vectors */
-    float len_i = get_vector_len(i);
-    float len_f = get_vector_len(f);
-    sim = (f[0] * i[0] + f[1] * i[1] + f[2] * i[2]) / (len_i * len_f);
+
+    float similarity;
+    float len_i = get_vector_len(initial);
+    float len_f = get_vector_len(finall);
+    similarity = (
+        finall[0] * initial[0] +
+        finall[1] * initial[1] +
+        finall[2] * initial[2]
+    ) / (len_i * len_f);
+    return similarity;
 }
 
 void shape_array(float float_array[NS], q15_t int_array[NS]){
@@ -106,71 +114,57 @@ void loop()
     float lens[NS];
     float cossim[NS];
     q15_t intcossim[NS];
-    float accel_values[3];
-    float sim;
-    float old_direction[3];
-    float new_direction[3];
+    /*float accel_values[3];*/
+    float old_vector[3] = {0.0, 0.0, 0.0};
+    float new_vector[3] = {0.0, 0.0, 0.0};
+
     float leng;
 
-    for(int i=0; i<3; i++){old_direction[i] = 0.0;}
-    for(int i=0; i<3; i++){new_direction[i] = 0.0;}
-
     for(int i=0; i<NS; i++){
-        read_imu(accel_values);
-        /* save length into array of lengths */
-        /* lengths are not being used but for cossims, what to do w them? */
-        leng = get_vector_len(accel_values);
-
-        /*SerialUSB.print("old direction: ");*/
-        /*SerialUSB.print(old_direction[0]);*/
-        /*SerialUSB.print(' ');*/
-        /*SerialUSB.print(old_direction[1]);*/
-        /*SerialUSB.print(' ');*/
-        /*SerialUSB.println(old_direction[2]);*/
-        get_direction(new_direction, accel_values, leng);
-        /*SerialUSB.print("new direction: ");*/
-        /*SerialUSB.print(new_direction[0]);*/
-        /*SerialUSB.print(' ');*/
-        /*SerialUSB.print(new_direction[1]);*/
-        /*SerialUSB.print(' ');*/
-        /*SerialUSB.println(new_direction[2]);*/
+        read_imu(new_vector);
         /* compute cosine similarity between new direction and old */
         if(i==0){
             cossim[i] = 0;
-            // dirs[i] = 0;
         }
         else {
-            get_cos_sim(
-                sim,
-                old_direction,
-                new_direction
+            cossim[i] = get_cos_sim(
+                old_vector,
+                new_vector
             );
-            cossim[i] = sim;
         }
-        SerialUSB.print("coscim" );
-        SerialUSB.println(cossim[i]);
         // copy save new_direction
-        old_direction[0] = new_direction[0];
-        old_direction[1] = new_direction[1];
-        old_direction[2] = new_direction[2];
+        old_vector[0] = new_vector[0];
+        old_vector[1] = new_vector[1];
+        old_vector[2] = new_vector[2];
 
         /*sleep by some variables*/
         delay(DL);
     }
+    SerialUSB.println(" done with a loop.. ");
     shape_array(cossim, intcossim);
+    // print the float array of cosine similarity
+    SerialUSB.println("cossim: ");
     for(int i=0; i<10; i++){
         SerialUSB.print(cossim[i]);
+        SerialUSB.print(", ");
     }
-    SerialUSB.println(' ');
+    // print the integer array of cosine similarity
+    SerialUSB.println(" ");
+    SerialUSB.println("intcossim: ");
     for(int i=0; i<10; i++){
         SerialUSB.print(intcossim[i]);
+        SerialUSB.print(", ");
     }
     SerialUSB.println(' ');
-    /* Perform FFT on directions */
+
+    /*[> Perform FFT on directions <]*/
     ZeroFFT(intcossim, DATA_SIZE);
-    /* Print some output to serial monitor */
+
+    SerialUSB.println("intcossim post FFT: ");
+    // Did anything change on intcossim?
     for(int i=0; i<10; i++){
         SerialUSB.print(intcossim[i]);
+        SerialUSB.print(", ");
     }
     SerialUSB.println(' ');
 }
