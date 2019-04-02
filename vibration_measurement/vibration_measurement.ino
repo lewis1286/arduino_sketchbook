@@ -9,22 +9,21 @@
 //this must be a power of 2
 #define DATA_SIZE 256
 
-//the sample rate
+//sample rate
 #define FS 8000
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 
 
-const int NS = 500; // Number of samples to take in for a fft batch (?global?)
+const int NS = 500; // Number of samples to take in for a fft batch
 const int DL = 100; // Duratoin of delay within loop
 
 void setup()
 {
-  pinMode(LED_BUILTIN, OUTPUT);
 
   #ifndef ESP8266
-    while (!SerialUSB);     // will pause Zero, Leonardo, etc until serial console opens
+    while (!SerialUSB);     // will pause until serial opens
   #endif
   SerialUSB.begin(9600);
   SerialUSB.println("Accelerometer Test"); SerialUSB.println("");
@@ -62,7 +61,7 @@ void read_imu(float accel_values[3]){
     sensors_event_t event;
     accel.getEvent(&event);
 
-    /* 1. get the x,y,z coordinates of the accelerometer */
+    /* get the x,y,z coordinates of the accelerometer */
     accel_values[0] = event.acceleration.x;
     accel_values[1] = event.acceleration.y;
     accel_values[2] = event.acceleration.z;
@@ -96,10 +95,8 @@ void loop()
     float lens[NS];
     float cossim[NS];
     q15_t intcossim[NS];
-    /*float accel_values[3];*/
     float old_vector[3] = {0.0, 0.0, 0.0};
     float new_vector[3] = {0.0, 0.0, 0.0};
-
     float leng;
 
     for(int i=0; i<NS; i++){
