@@ -3,7 +3,6 @@
 #include <Adafruit_LSM303_U.h>
 
 #include "Adafruit_ZeroFFT.h"
-#include "signal.h"
 
 //the signal in signal.h has 2048 samples. Set this to a value between 16 and 2048 inclusive.
 //this must be a power of 2
@@ -15,9 +14,8 @@
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
 
-
-const int NS = 500; // Number of samples to take in for a fft batch
-const int DL = 100; // Duratoin of delay within loop
+#define NS 1000 // Number of samples to take in for a fft batch
+#define DL 5 // Duratoin of delay within loop
 
 void setup()
 {
@@ -49,10 +47,9 @@ float get_vector_len(float vector[]){
 }
 
 void get_direction(float direct[3], float accel_values[3], float leng){
-
-    direct[0] = accel_values[0] / leng;
-    direct[1] = accel_values[1] / leng;
-    direct[2] = accel_values[2] / leng;
+    for(int i=0; i<3; i++){
+        direct[i] = accel_values[i] / leng;
+    }
 }
 
 void read_imu(float accel_values[3]){
@@ -84,6 +81,7 @@ float get_cos_sim(float initial[3], float finall[3]){
 void shape_array(float float_array[NS], q15_t int_array[NS]){
     /*cos array is in [-1,1] but we need it in ints for FFT*/
     for(int i=0; i<NS; i++){
+//        float temp = ((-1 * float_array[i]) + 1)* 1000;
         float temp = float_array[i] * 1000;
         int_array[i] = (int) temp;
     }
@@ -95,16 +93,15 @@ void loop()
     float lens[NS];
     float cossim[NS];
     q15_t intcossim[NS];
-    float old_vector[3] = {0.0, 0.0, 0.0};
+    float old_vector[3] = {0.57735, 0.57735, 0.57735}; // unit vector
     float new_vector[3] = {0.0, 0.0, 0.0};
     float leng;
 
+    SerialUSB.println(" starting a loop.. ");
     for(int i=0; i<NS; i++){
         read_imu(new_vector);
         /* compute cosine similarity between new direction and old */
-        if(i==0){
-            cossim[i] = 0;
-        }
+        if(i==0){cossim[i] = 1;}
         else {
             cossim[i] = get_cos_sim(
                 old_vector,
@@ -112,11 +109,11 @@ void loop()
             );
         }
         // copy save new_direction
-        old_vector[0] = new_vector[0];
-        old_vector[1] = new_vector[1];
-        old_vector[2] = new_vector[2];
+        for(int j = 0; j < 3; ++j) {
+            old_vector[j] = new_vector[j];
+        }
 
-        /*sleep by some variables*/
+        /*sleep*/
         delay(DL);
     }
     SerialUSB.println(" done with a loop.. ");

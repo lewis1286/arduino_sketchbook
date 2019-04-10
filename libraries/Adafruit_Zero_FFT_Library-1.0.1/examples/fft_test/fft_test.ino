@@ -20,7 +20,7 @@
 
 // the setup routine runs once when you press reset:
 void setup() {
-  SerialUSB.begin(115200);
+  SerialUSB.begin(9600);
   while(!SerialUSB); //wait for serial to be ready
 
   //run the FFT
