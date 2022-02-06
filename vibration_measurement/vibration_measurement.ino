@@ -14,7 +14,7 @@
 
 /* Assign a unique ID to this sensor at the same time */
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(54321);
-#define NS 1000 // Number of samples to take in for a fft batch
+#define NS 10 // Number of samples to take in for a fft batch
 
 
 void setup()
@@ -52,16 +52,16 @@ void get_direction(float direct[3], float accel_values[3], float leng){
     }
 }
 
-void read_imu(float accel_values[3]){
+void read_imu(float &x, float &y, float &z){
     /* Read in Accelerometer metrics, return the length and direction */
     /* Get a new sensor event */
     sensors_event_t event;
     accel.getEvent(&event);
 
     /* get the x,y,z coordinates of the accelerometer */
-    accel_values[0] = event.acceleration.x;
-    accel_values[1] = event.acceleration.y;
-    accel_values[2] = event.acceleration.z;
+    x = event.acceleration.x;
+    y = event.acceleration.y;
+    z = event.acceleration.z;
 }
 
 float get_cos_sim(float initial[3], float finall[3]){
@@ -99,38 +99,52 @@ void loop()
     float start_time = micros();
 
     float time_delta;
+    // build array of sensor readings within loop, then manipulate outside
+    float imu_readings[NS][3];
+
 
     for(int i=0; i<NS; i++){
-//        if(i==1){start_time = micros();}
-        read_imu(new_vector);
-        /* compute cosine similarity between new direction and old */
-        if(i==0){cossim[i] = 1;}
-        else {
-            cossim[i] = get_cos_sim(
-                old_vector,
-                new_vector
-            );
-        }
-        // copy save new_direction
-        for(int j = 0; j < 3; ++j) {
-            old_vector[j] = new_vector[j];
-        }
-
-        /*sleep*/
-        delay(DL);
+        read_imu(
+            imu_readings[i][0],
+            imu_readings[i][1],
+            imu_readings[i][2]
+        );
+        delay(4);
 
     }
+        /*compute cosine similarity between new direction and old */
+        /*if(i==0){cossim[i] = 1;}*/
+        /*else {*/
+            /*cossim[i] = get_cos_sim(*/
+                /*old_vector,*/
+                /*new_vector*/
+            /*);*/
+        /*}*/
+        /*// copy save new_direction*/
+        /*for(int j = 0; j < 3; ++j) {*/
+            /*old_vector[j] = new_vector[j];*/
+        /*}*/
+
+        /*sleep*/
+        /*delay(DL);*/
     float end_time = micros();
     time_delta = end_time - start_time;
     SerialUSB.print("Run-time: ");
     SerialUSB.println(time_delta / NS);
-
-    shape_array(cossim, intcossim);
+    for(int i=0; i<NS;i++){
+      for(int j=0; j<3;j++){
+        SerialUSB.print(imu_readings[i][j]);
+        SerialUSB.print(", ");
+      }
+      SerialUSB.println("");
+    }
+    SerialUSB.println("");
+    /*shape_array(cossim, intcossim);*/
     /*[> Perform FFT on directions <]*/
-    ZeroFFT(intcossim, DATA_SIZE);
+    /*ZeroFFT(intcossim, DATA_SIZE);*/
 //    plot_fft(intcossim);
-    delay(2000);
-    SerialUSB.println(6);
+
+    delay(5000);
 }
 
 void print_fft(q15_t data[]){
