@@ -18,32 +18,37 @@
 Adafruit_VS1053_FilePlayer musicPlayer = 
  Adafruit_VS1053_FilePlayer(VS1053_RESET, VS1053_CS, VS1053_DCS, VS1053_DREQ, CARDCS);
 
+const int unsetPin = 10;
+const int setPin = 11;
+
 void setup() {
+  pinMode(unsetPin, OUTPUT);
+  pinMode(setPin, OUTPUT);
+  
  Serial.begin(115200);
 
- // if you're using Bluefruit or LoRa/RFM Feather, disable the radio module
- //pinMode(8, INPUT_PULLUP);
+   // if you're using Bluefruit or LoRa/RFM Feather, disable the radio module
+  //pinMode(8, INPUT_PULLUP);
 
- // Wait for serial port to be opened, remove this line for 'standalone' operation
- while (!Serial) { delay(1); }
- delay(500);
- Serial.println("\n\nAdafruit VS1053 Feather Test");
- 
- if (! musicPlayer.begin()) { // initialise the music player
-    Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
-    while (1);
- }
+  // Wait for serial port to be opened, remove this line for 'standalone' operation
+  while (!Serial) { delay(1); }
+  delay(500);
+  Serial.println("\n\nAdafruit VS1053 Feather Test");
+  
+  if (! musicPlayer.begin()) { // initialise the music player
+     Serial.println(F("Couldn't find VS1053, do you have the right pins defined?"));
+     while (1);
+  }
 
- Serial.println(F("VS1053 found"));
-
- musicPlayer.sineTest(0x44, 1000);    // Make a tone to indicate VS1053 is working
+  Serial.println(F("VS1053 found"));
  
- if (!SD.begin(CARDCS)) {
-   Serial.println(F("SD failed, or not present"));
-   while (1);  // don't do anything more
- }
- Serial.println("SD OK!");
- 
+  musicPlayer.sineTest(0x44, 500);    // Make a tone to indicate VS1053 is working
+  
+  if (!SD.begin(CARDCS)) {
+    Serial.println(F("SD failed, or not present"));
+    while (1);  // don't do anything more
+  }
+  Serial.println("SD OK!");
  // list files
  printDirectory(SD.open("/"), 0);
  
@@ -75,14 +80,41 @@ void setup() {
  musicPlayer.startPlayingFile("/track002.mp3");
 }
 
+
 void loop() {
   Serial.print(".");
-  // File is playing in the background
- if (musicPlayer.stopped()) {
-   Serial.println("Done playing music");
-   while (1) {
-     delay(10);  // we're done! do nothing...
-   }
+
+  // relay bits
+  /* 
+   When the SET pin is pulled high, the relay switches and the internal 
+   switch changes so that the COM pin is mechanically connected to the 
+   NO pin and NC is then disconnected
+
+   see https://learn.adafruit.com/mini-relay-featherwings/overview
+
+   a SET and UNSET and instead of keeping the SET pin high, you only 
+   have to pulse each pin high for 10ms to latch the relay open or closed. 
+   */
+    while(1) {
+      digitalWrite(setPin, HIGH);
+      delay(10);
+      digitalWrite(setPin, LOW);
+
+      delay(2000);
+
+      digitalWrite(unsetPin, HIGH);
+      delay(10);
+      digitalWrite(unsetPin, LOW);
+
+      delay(2000);
+    };
+
+   // music bits
+//   if (musicPlayer.stopped()) {
+//     Serial.println("Done playing music");
+//     while (1) {
+//       delay(10);  // we're done! do nothing...
+//     }
  }
  if (Serial.available()) {
    char c = Serial.read();
