@@ -219,7 +219,21 @@ listStartupSongs();
   musicPlayer.useInterrupt(VS1053_FILEPLAYER_PIN_INT);  // DREQ int
 #endif
 //  
-   flashEyes(5, 200);
+//   flashEyes(5, 200);
+  for (int i = 1; i<6; i++) {
+      digitalWrite(setPin, HIGH);
+      delay(10);
+      digitalWrite(setPin, LOW);
+
+      delay(i * 50);
+
+      digitalWrite(unsetPin, HIGH);
+      delay(10);
+      digitalWrite(unsetPin, LOW);
+
+      delay(i * 50);
+  }
+  
   playStartupSong();
 }
 
@@ -252,14 +266,14 @@ void playBattSong() {
 
 void playStartupSong() {
   // play random base song
-  int songNo = random(nStartupSongs);
-  String filePath = ("/startup/" + startupSongList[songNo]);
-  int filePathLen = filePath.length() + 1;
-  char char_array[filePathLen];
-  filePath.toCharArray(char_array, filePathLen);
-
-  Serial.println(char_array);
-  musicPlayer.playFullFile(char_array);
+//  int songNo = random(nStartupSongs);
+//  String filePath = ("/startup/" + startupSongList[songNo]);
+//  int filePathLen = filePath.length() + 1;
+//  char char_array[filePathLen];
+//  filePath.toCharArray(char_array, filePathLen);
+//
+//  Serial.println(char_array);
+  musicPlayer.playFullFile("/startup/MacBoot.mp3");
 }
 
 bool lowBattery() {
@@ -287,4 +301,5 @@ void loop() {
     }
     delay(500);
   }
+  delay(40);
 }
