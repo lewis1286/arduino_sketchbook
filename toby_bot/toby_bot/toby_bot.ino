@@ -252,14 +252,14 @@ void playBattSong() {
 
 void playStartupSong() {
   // play random base song
-  int songNo = random(nStartupSongs);
-  String filePath = ("/startup/" + startupSongList[songNo]);
-  int filePathLen = filePath.length() + 1;
-  char char_array[filePathLen];
-  filePath.toCharArray(char_array, filePathLen);
-
-  Serial.println(char_array);
-  musicPlayer.playFullFile(char_array);
+//  int songNo = random(nStartupSongs);
+//  String filePath = ("/startup/" + startupSongList[songNo]);
+//  int filePathLen = filePath.length() + 1;
+//  char char_array[filePathLen];
+//  filePath.toCharArray(char_array, filePathLen);
+//
+//  Serial.println(char_array);
+  musicPlayer.playFullFile("/startup/MacBoot.mp3");
 }
 
 bool lowBattery() {
