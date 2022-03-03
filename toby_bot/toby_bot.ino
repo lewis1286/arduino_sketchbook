@@ -1,13 +1,5 @@
 // Specifically for use with the Adafruit Feather, the pins are pre-set here!
-/*
- * sounds to get
- * AOL connect
- * model dialup
- * reggae sound
- * mac boot sound
- * windows 7 boot sound
- * 
- */
+
 // include SPI, MP3 and SD libraries
 #include <SPI.h>
 #include <SD.h>
